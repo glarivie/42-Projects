@@ -1,0 +1,117 @@
+.home {
+	max-width: 935px;
+	width: 100%;
+	margin: 19% auto 0;
+}
+
+.home .home-right {
+	justify-content: center;
+	display: inline-block;
+	vertical-align: middle;
+	width: 350px;
+}
+
+.home .form {
+	width: 100%;
+	background-color: #FFF;
+	border: 1px solid #DDD;
+	border-radius: 3px;
+	box-shadow: 0px 0px 12px #DDD;
+	padding-top: 8px;
+	padding-bottom: 20px;
+}
+
+.home .form h4 {
+	color: #a5a7aa;
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 20px;
+	margin: 0 40px 10px;
+	text-align: center;
+}
+
+form button {
+	margin: 8px 40px;
+	color: #FFF;
+	line-height: 29px;
+	padding: 0 11px;
+	cursor: pointer;
+	background-color: #4090DB;
+	border: 1px solid #1772C7;
+	border-radius: 3px;
+	font-size: 14px;
+	outline: none;
+	width: 268px;
+	height: 33px;
+	-webkit-appearance: none;
+}
+
+.home p {
+	color: #818488;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 10px 60px;
+	text-align: center;
+}
+
+#connection, #subscription {
+	position: relative;
+}
+
+#connection h4 {
+	margin-bottom: 18px;
+}
+
+form input {
+	width: 250px;
+	margin: 0 40px 6px;
+	position: relative;
+	background-color: #fdfdfd;
+	border: 1px solid #edeeee;
+	border-radius: 3px;
+	font-size: 14px;
+	padding: 9px 8px 7px;
+	-webkit-appearance: none;
+	outline: none;
+}
+
+.home h1 {
+	font-weight: lighter;
+	text-align: center;
+	padding-left: -5px;
+	border-left: 5px solid #818488;
+}
+
+.hr .or {
+	position: absolute;
+	top: -19px;
+	left: 25%;
+	background-color: #FFF;
+	padding-left: 8px;
+	padding-right: 8px;
+	z-index: 2;
+	color: #AAA;
+	font-size: 13px;
+}
+
+.home .choice {
+	justify-content: center;
+	width: 350px;
+	background-color: #FFF;
+	border: 1px solid #DDD;
+}
+
+#forgot {
+	position: absolute;
+	left: 244px;
+	top:107px;
+	font-size: 14px;
+}
+
+.choice {
+	margin-top: 14px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 12px #DDD;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}

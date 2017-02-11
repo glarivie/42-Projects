@@ -1,0 +1,86 @@
+.app {
+	margin-top: 130px;
+	padding: 1%;
+}
+
+.top-app, .bottom-app {
+	width: 100%;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin-bottom: 10px;;
+}
+
+#top-left-app, #top-right-app, #bottom-left-app, #bottom-right-app {
+	width: 47%;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	border: 1px solid #FFF;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+#filters button {
+	background-image: url('../img/mongolfiere.jpg');
+	background-size: 100%;
+	background-position: center;
+	width: 70px;
+	height: 70px;
+	color: #FFF;
+	font-size: 14px;
+	text-shadow: 0 0 5px #CCC;
+	text-align: center;
+	border: 1px solid #DDD;
+	padding: 4px;
+	border-radius: 4px;
+	box-shadow: 0 0 8px #DDD;
+	margin-right: 5px;
+	margin-bottom: 8px;
+	box-shadow: 0 0 8px #CCC;
+}
+
+#filters button:hover, #filters button:focus {
+	cursor: pointer;
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	outline: none;
+}
+
+.webcam {
+	position: relative;
+}
+
+#moustacheAbsolute, #lunettesAbsolute, #hatAbsolute {
+	display: none;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+}
+
+#tab-header li {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 2%;
+	padding-right: 2%;
+	border: 1px solid #EEE;
+	margin-bottom: -1px;
+	border-radius: 4px;
+}
+
+#tab-header li:hover, #tab-header li:focus {
+	cursor: pointer;
+	border-top: 1px solid #FFF;
+	border-left: 1px solid #FFF;
+	border-right: 1px solid #FFF;
+}
+
+#tab-header {
+	border-bottom: 1px solid #FFF;
+	padding: 0;
+}
