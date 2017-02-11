@@ -1,0 +1,32 @@
+<div class="container-fluid library">
+	<div class="col-md-12 moviesList">
+		<div class="row thumbnails" id="getMovies">
+			{{#each movies}}
+				<div class="col-md-4">
+					<div class="movie">
+						<div class="poster" style="background-image: url('{{ poster}}');">
+							<div class="resolutions hidden">
+								{{#each resolutions}}
+									<a href="{{ link }}" type="button" class="btn btn-resolution btn-sm"><i class="fa fa-play-circle" aria-hidden="true"></i> <strong>{{ resolution }}</strong> <em>({{ seeds }})</em></a>
+								{{/each}}
+							</div>
+						</div>
+						<div class="movie-infos">
+							<h4><a href="{{ defaultLink }}">{{ title }}</a> ({{ year }})</h4>
+							<small class="movie-basics text-muted">
+								<span class="rated">{{ rated }}</span>
+								{{ runtime }} - {{ genres }}
+							</small>
+							<p class="imdb-rating"><strong>IMDB Rating: {{ imdb.rating }}</strong>/10 ({{ imdb.votes }})</p>
+							<p class="plot"><em>{{ plot }}</em></p>
+							<p class="director"><strong>Director: </strong>{{ director }}</p>
+							<p class="stars"><strong>Stars: </strong>{{ actors }}</p>
+						</div>
+					</div>
+				</div>
+			{{/each}}
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="/js/search.js"></script>

@@ -1,0 +1,32 @@
+{
+  "name": "hypertube",
+  "homepage": "localhost:3000",
+  "description": "42 third web project",
+  "main": "index.js",
+  "keywords": [
+    "42",
+    "hypertube",
+    "node",
+    "web"
+  ],
+  "authors": [
+    "glarivie@student.42.fr"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.3",
+    "font-awesome": "fontawesome#^4.6.3",
+    "jquery-dateFormat": "^1.0.2"
+  },
+  "devDependencies": {
+    "jquery-dateFormat": "^1.0.2"
+  }
+}

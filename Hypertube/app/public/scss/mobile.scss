@@ -1,0 +1,122 @@
+@media only screen and (max-width: 768px) {
+	.homepage {
+
+		.jumbotron {
+			max-width: 99vw;
+
+			h1 {
+				font-size: 12vw;
+				border-left: none;
+			}
+		}
+	}
+
+	.userpage {
+		.jumbotron {
+			max-width: 99vw;
+		}
+	}
+
+	.moviesList {
+		.thumbnails {
+			.movie {
+				.movie-basics {
+					font-size: 2vw;
+				}
+
+				.imdb-rating {
+					font-size: 2vw;
+				}
+
+				h4 {
+					font-size: 3.5vw;
+				}
+
+				.plot, .director, .stars {
+					font-size: 2.3vw;
+				}
+			}
+		}
+	}
+	.player {
+		margin-top: 8%;
+		
+		.alert {
+			width: 95vw;
+		}
+		.player-block {
+			width: 95vw;
+
+			.video {
+				video {
+					width: 94.94vw;
+				}
+			}
+
+			.video-infos {
+				.movie {
+					.movie-basics {
+						font-size: 3vw;
+					}
+
+					.imdb-rating {
+						font-size: 3vw;
+					}
+
+					h4 {
+						font-size: 4vw;
+					}
+
+					.plot, .director, .stars {
+						font-size: 3vw;
+					}
+				}
+			}
+		}
+
+
+
+	}
+
+}
+
+@media only screen and (max-width: 1000px) {
+	.player {
+		margin-top: 8%;
+		
+		.alert {
+			width: 75vw;
+		}
+		.player-block {
+			width: 75vw;
+
+			.video {
+				video {
+					width: 74.94vw;
+				}
+			}
+			.video-infos {
+				.movie {
+					.movie-basics {
+						font-size: 2vw;
+					}
+
+					.imdb-rating {
+						font-size: 2vw;
+					}
+
+					h4 {
+						font-size: 3vw;
+					}
+
+					.plot, .director, .stars {
+						font-size: 2vw;
+					}
+				}
+			}
+		}
+
+
+
+	}
+}

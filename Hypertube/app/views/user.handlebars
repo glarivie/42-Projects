@@ -1,0 +1,28 @@
+<div class="container-fluid profile-page">
+	<div class="row profile center-block">
+		<div class="alert alert-warning alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<strong>This is not your profile page !</strong> You can't edit the informations here.
+		</div>
+
+		<div class="profile-info" id="public-avatar" style="background-image: url('{{ user.avatar }}')">
+			<div class="gradient-filter">
+				<p class="hello lead">Hello I am,</p>
+				<h1 class="text-uppercase"><span id="public-firstname">{{ user.firstname }}</span> <strong id="public-lastname">{{ user.lastname }}</strong></h1>
+				<h3><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp; aka. <strong class="username" id="public-username">{{ user.username }}</strong></h3>
+			</div>
+		</div>
+
+		<div class="row center-block player-block">
+			<span class="part">Recently viewed :</span>
+			<hr />
+			{{#each user.history}}
+				<div class="video-infos">
+					<a class="movie" href="{{ link }}">
+						<div class="poster" style="background-image: url('{{ poster }}');"></div>
+					</a>
+				</div>
+			{{/each}}
+		</div>
+	</div>
+</div>

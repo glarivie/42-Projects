@@ -1,0 +1,41 @@
+<div class="container-fluid player">
+	<div class="row center-block player-block">
+		<div class="video">
+			<div id="video" data-id="{{ params.id }}" data-resolution="{{ params.resolution }}"></div>
+		</div>
+		<div class="video-infos">
+			<div class="movie">
+				<div class="poster" style="background-image: url('{{ movie.poster }}');"></div>
+				<div class="movie-infos">
+					<h4>{{ movie.title }} ({{ movie.year }})</h4>
+					<small class="movie-basics text-muted">
+						<span class="rated">{{ movie.rated }}</span>
+						{{ movie.runtime }} - {{ movie.genres }}
+					</small>
+					<p class="imdb-rating"><strong>IMDB Rating: {{ movie.imdb.rating }}</strong>/10 ({{ movie.imdb.votes }})</p>
+					<p class="plot"><strong>Synopsis:</strong> <em>{{ movie.plot }}</em></p>
+					<p class="director"><strong>Director: </strong>{{ movie.director }}</p>
+					<p class="stars"><strong>Stars: </strong>{{ movie.actors }}</p>
+					<div class="other-resolutions">
+						{{#each movie.resolutions}}
+							{{#if this.link}}
+								<a href="{{ this.link }}" type="button" class="btn btn-default btn-sm"><i class="fa fa-play-circle" aria-hidden="true"></i> <strong>{{ this.resolution }}</strong> <em>({{ this.seeds }})</em></a>
+							{{/if}}
+						{{/each}}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="comments">
+			<div class="form-group">
+				<label for="comment">Comment:</label>
+				<textarea class="form-control" rows="5" id="comment"></textarea>
+				<button type="button" class="btn btn-primary">Add my comment</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="http://content.jwplatform.com/libraries/F4Xxz6Ay.js"></script>
+<script type="text/javascript" src="//cdn.embed.ly/player-0.0.11.min.js"></script>
+<script type="text/javascript" src="/js/player.js"></script>

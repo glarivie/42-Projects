@@ -1,0 +1,497 @@
+.homepage .jumbotron {
+  max-width: 49vw;
+  background-image: url("../img/home-bg4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 12px #CCC;
+  margin-top: 6%; }
+  .homepage .jumbotron h1 {
+    font-weight: lighter;
+    padding-left: 60px;
+    margin-left: -60px;
+    border-left: 7px solid #337ab7;
+    margin-bottom: 32px; }
+  .homepage .jumbotron .btn {
+    width: 76%; }
+
+.userpage .jumbotron {
+  max-width: 55vw;
+  background-color: #FFF;
+  box-shadow: 0 0 12px #CCC;
+  margin-top: 4%; }
+  .userpage .jumbotron h2 {
+    margin-top: 0; }
+  .userpage .jumbotron .page-change {
+    margin-top: 8px; }
+  .userpage .jumbotron .part {
+    background-color: #FFF;
+    color: #DDD;
+    font-weight: 200;
+    font-size: small;
+    padding-left: 6px;
+    padding-right: 6px;
+    position: relative;
+    top: 29px;
+    left: 41.5%;
+    z-index: 1; }
+  .userpage .jumbotron .section {
+    margin-top: 35px; }
+  .userpage .jumbotron p {
+    font-size: inherit !important;
+    font-weight: 400;
+    margin-bottom: 0; }
+  .userpage .jumbotron small {
+    width: 100%;
+    display: block; }
+  .userpage .jumbotron .form-group {
+    position: relative;
+    margin-bottom: 20px; }
+    .userpage .jumbotron .form-group input[type="file"] {
+      color: #999;
+      font-size: small;
+      vertical-align: top; }
+    .userpage .jumbotron .form-group label {
+      position: absolute;
+      top: -13px;
+      left: 4px;
+      background-color: #FFF;
+      padding-left: 3px;
+      padding-right: 3px;
+      font-weight: 500; }
+    .userpage .jumbotron .form-group #forgot {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      z-index: 2;
+      font-size: small; }
+  .userpage .jumbotron .btn {
+    width: 100%;
+    margin-bottom: 8px; }
+
+nav {
+  box-shadow: 0 0 12px #DDD;
+  border-bottom: 1px solid #CCC !important;
+  border-left: 5px solid #777 !important; }
+  nav #lang-choice {
+    margin-top: 8px; }
+  nav #filters {
+    margin-top: 8px;
+    margin-left: 15px; }
+  nav #filters button {
+    outline: none; }
+  nav #lang-choice > button {
+    outline: none !important;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); }
+  nav #lang-choice > button:disabled {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%); }
+  nav .navbar-brand {
+    font-weight: 200; }
+  nav .navbar-form input {
+    border-radius: 4px 0 0 4px;
+    width: 30vw !important; }
+  nav .navbar-form button {
+    border-radius: 0 4px 4px 0;
+    position: relative;
+    left: -4px; }
+
+.profile {
+  margin-top: 6%;
+  max-width: 650px; }
+  .profile .alert {
+    box-shadow: 0 0 8px #DDD; }
+  .profile .top-modif {
+    position: relative;
+    top: -30px; }
+  .profile .player-block {
+    padding: 10px;
+    background-color: #FFF;
+    border-radius: 6px;
+    max-width: 95%;
+    box-shadow: 0 0 12px #DDD; }
+    .profile .player-block .part {
+      background-color: #FFF;
+      color: #DDD;
+      font-weight: 200;
+      font-size: small;
+      padding-left: 6px;
+      padding-right: 6px;
+      position: relative;
+      top: 4px;
+      left: 41.5%;
+      z-index: 1; }
+    .profile .player-block hr {
+      margin-top: -5px !important; }
+    .profile .player-block .video-infos {
+      display: inline-block;
+      vertical-align: top;
+      max-width: 138px;
+      margin-right: 11px; }
+      .profile .player-block .video-infos .movie {
+        position: relative; }
+        .profile .player-block .video-infos .movie .poster {
+          background-size: cover;
+          position: relative;
+          margin-right: 10px;
+          width: 138px;
+          height: 207px; }
+        .profile .player-block .video-infos .movie .poster:hover, .profile .player-block .video-infos .movie .poster:focus {
+          filter: grayscale(100%);
+          -webkit-filter: grayscale(100%); }
+    .profile .player-block .video-infos:last-child {
+      margin-right: 0 !important; }
+  .profile .profile-info {
+    position: relative;
+    min-height: 250px;
+    width: 100%;
+    z-index: 1;
+    border-radius: 4px;
+    color: #FFF;
+    box-shadow: 0 6px 8px #DDD;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain; }
+    .profile .profile-info .public-user {
+      padding-left: 25px; }
+    .profile .profile-info .gradient-filter {
+      background: -moz-linear-gradient(left, black 0%, black 60%, transparent 100%);
+      background: -webkit-linear-gradient(left, black 0%, black 60%, transparent 100%);
+      background: linear-gradient(to right, black 0%, black 60%, transparent 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
+      min-height: 250px;
+      width: 100%;
+      z-index: 2;
+      border-radius: 4px; }
+      .profile .profile-info .gradient-filter .hello {
+        font-weight: 100;
+        padding-left: 25px;
+        padding-top: 28px;
+        margin-bottom: 4px;
+        font-size: 28px;
+        color: #888; }
+      .profile .profile-info .gradient-filter h1 {
+        font-weight: 100;
+        font-size: 48px;
+        padding-left: 21px;
+        border-left: 4px solid #FFF;
+        margin-top: 0; }
+      .profile .profile-info .gradient-filter h3 {
+        font-weight: 100;
+        padding-left: 25px;
+        margin-top: 0; }
+      .profile .profile-info .gradient-filter .mailaddress {
+        font-weight: 100;
+        padding-left: 25px; }
+      .profile .profile-info .gradient-filter .edit-info-icon {
+        position: absolute;
+        font-size: 24px;
+        bottom: 8px;
+        right: 16px; }
+      .profile .profile-info .gradient-filter .edit-info-icon:hover, .profile .profile-info .gradient-filter .edit-info-icon:focus {
+        cursor: pointer;
+        color: #337ab7; }
+  .profile .jumbotron {
+    z-index: 0;
+    box-shadow: 0 0 8px #DDD;
+    max-width: 95%;
+    background-color: #FFF;
+    position: relative;
+    top: -50px; }
+    .profile .jumbotron h2 {
+      margin-top: 0; }
+    .profile .jumbotron .page-change {
+      margin-top: 8px; }
+    .profile .jumbotron .part {
+      background-color: #FFF;
+      color: #DDD;
+      font-weight: 200;
+      font-size: small;
+      padding-left: 6px;
+      padding-right: 6px;
+      position: relative;
+      top: 29px;
+      left: 41.5%;
+      z-index: 1; }
+    .profile .jumbotron .section {
+      margin-top: 35px; }
+    .profile .jumbotron p {
+      font-size: inherit !important;
+      font-weight: 400;
+      margin-bottom: 0; }
+    .profile .jumbotron small {
+      width: 100%;
+      display: block; }
+    .profile .jumbotron .form-group {
+      position: relative;
+      margin-bottom: 20px; }
+      .profile .jumbotron .form-group input[type="file"] {
+        color: #999;
+        font-size: small;
+        vertical-align: top; }
+      .profile .jumbotron .form-group label {
+        position: absolute;
+        top: -13px;
+        left: 4px;
+        background-color: #FFF;
+        padding-left: 3px;
+        padding-right: 3px;
+        font-weight: 500;
+        border-radius: 0 0 6px 6px; }
+      .profile .jumbotron .form-group #forgot {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        z-index: 2;
+        font-size: small; }
+    .profile .jumbotron button {
+      width: 100%;
+      margin-bottom: 8px; }
+
+.moviesList {
+  margin-top: 5%; }
+  .moviesList .thumbnails {
+    padding: 10px; }
+    .moviesList .thumbnails .movie {
+      position: relative;
+      background-color: #FFF;
+      border: 1px solid #CCC;
+      padding: 10px;
+      border-radius: 4px;
+      box-shadow: 0 0 8px #DDD;
+      margin-bottom: 20px;
+      height: 230px; }
+      .moviesList .thumbnails .movie .poster {
+        background-size: cover;
+        position: relative;
+        margin-right: 10px;
+        width: 138px;
+        height: 207px;
+        float: left; }
+        .moviesList .thumbnails .movie .poster .resolutions {
+          position: absolute;
+          top: 10px;
+          left: 1px;
+          width: 136px; }
+          .moviesList .thumbnails .movie .poster .resolutions .btn {
+            width: 100%;
+            margin-bottom: 10px;
+            color: #000;
+            border: none;
+            border-radius: 0;
+            background-color: rgba(255, 255, 255, 0.8); }
+          .moviesList .thumbnails .movie .poster .resolutions .btn:hover, .moviesList .thumbnails .movie .poster .resolutions .btn:focus {
+            cursor: pointer;
+            background-color: white; }
+      .moviesList .thumbnails .movie .poster:hover, .moviesList .thumbnails .movie .poster:focus {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%); }
+      .moviesList .thumbnails .movie .movie-infos {
+        max-height: 202px;
+        overflow: hidden; }
+      .moviesList .thumbnails .movie .movie-basics {
+        font-size: 0.8vw; }
+        .moviesList .thumbnails .movie .movie-basics .rated {
+          border: 1px solid #777;
+          padding: 1px 4px;
+          margin-right: 4px;
+          font-weight: bold; }
+      .moviesList .thumbnails .movie .imdb-rating {
+        margin-top: 3px;
+        font-size: 0.95vw;
+        margin-bottom: 3px; }
+      .moviesList .thumbnails .movie h4 {
+        color: #337ab7;
+        margin-bottom: 2px;
+        margin-top: 4px;
+        font-size: 1.4vw; }
+      .moviesList .thumbnails .movie .plot, .moviesList .thumbnails .movie .director, .moviesList .thumbnails .movie .stars {
+        font-size: 1vw;
+        margin-bottom: 2px; }
+
+.player {
+  margin-top: 5%; }
+  .player .alert {
+    width: 50vw;
+    box-shadow: 0 0 12px #DDD;
+    margin-bottom: 15px;
+    border: 1px solid #CCC; }
+  .player .player-block {
+    position: relative;
+    padding: 10px;
+    width: 50vw;
+    height: auto;
+    background-color: #FFF;
+    border-radius: 4px;
+    border: 1px solid #CCC;
+    box-shadow: 0 0 12px #DDD; }
+    .player .player-block .part {
+      background-color: #FFF;
+      color: #DDD;
+      font-weight: 200;
+      font-size: small;
+      padding-left: 6px;
+      padding-right: 6px;
+      position: relative;
+      top: 4px;
+      left: 41.5%;
+      z-index: 1; }
+    .player .player-block hr {
+      margin-top: -5px !important; }
+    .player .player-block .video {
+      position: relative;
+      top: -10px;
+      left: -10px; }
+      .player .player-block .video video {
+        background-color: #333;
+        width: 49.94vw;
+        height: auto;
+        border-radius: 4px 4px 0 0; }
+    .player .player-block .video-infos .movie {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      position: relative; }
+      .player .player-block .video-infos .movie .poster {
+        background-size: cover;
+        position: relative;
+        margin-right: 10px;
+        width: 138px;
+        height: 207px;
+        float: left; }
+      .player .player-block .video-infos .movie .other-resolutions {
+        position: relative;
+        margin-top: 10px; }
+      .player .player-block .video-infos .movie .poster:hover, .player .player-block .video-infos .movie .poster:focus {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%); }
+      .player .player-block .video-infos .movie .movie-infos {
+        height: 207px; }
+      .player .player-block .video-infos .movie .movie-basics {
+        font-size: 0.8vw; }
+        .player .player-block .video-infos .movie .movie-basics .rated {
+          border: 1px solid #777;
+          padding: 1px 4px;
+          margin-right: 4px;
+          font-weight: bold; }
+      .player .player-block .video-infos .movie .imdb-rating {
+        margin-top: 3px;
+        font-size: 0.95vw;
+        margin-bottom: 3px; }
+      .player .player-block .video-infos .movie h4 {
+        color: #337ab7;
+        margin-bottom: 2px;
+        margin-top: 4px;
+        font-size: 1.4vw; }
+      .player .player-block .video-infos .movie .plot, .player .player-block .video-infos .movie .director, .player .player-block .video-infos .movie .stars {
+        font-size: 1vw;
+        margin-bottom: 2px; }
+
+.comments .btn {
+  margin-top: 10px;
+  width: 100%; }
+
+.comments #comments-list .comment-block .comment-error {
+  float: right;
+  position: relative;
+  top: -18px;
+  right: 2px; }
+
+.comments #comments-list .comment-block .avatar {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  float: left; }
+
+.comments #comments-list .comment-block .content .delete-comment {
+  cursor: pointer; }
+
+.comments #comments-list .comment-block .content .text {
+  width: 100%; }
+
+.comments #comments-list .comment-block .panel {
+  position: relative;
+  float: right;
+  width: 88%; }
+
+.comments #comments-list .comment-block .panel > .panel-heading:after, .comments #comments-list .comment-block .panel > .panel-heading:before {
+  position: absolute;
+  top: 11px;
+  left: -16px;
+  right: 100%;
+  width: 0;
+  height: 0;
+  display: block;
+  content: " ";
+  border-color: transparent;
+  border-style: solid solid outset;
+  pointer-events: none; }
+
+.comments #comments-list .comment-block .panel > .panel-heading:after {
+  border-width: 7px;
+  border-right-color: #f7f7f7;
+  margin-top: 1px;
+  margin-left: 2px; }
+
+.comments #comments-list .comment-block .panel > .panel-heading:before {
+  border-right-color: #ddd;
+  border-width: 8px; }
+
+@media only screen and (max-width: 768px) {
+  .homepage .jumbotron {
+    max-width: 99vw; }
+    .homepage .jumbotron h1 {
+      font-size: 12vw;
+      border-left: none; }
+  .userpage .jumbotron {
+    max-width: 99vw; }
+  .moviesList .thumbnails .movie .movie-basics {
+    font-size: 2vw; }
+  .moviesList .thumbnails .movie .imdb-rating {
+    font-size: 2vw; }
+  .moviesList .thumbnails .movie h4 {
+    font-size: 3.5vw; }
+  .moviesList .thumbnails .movie .plot, .moviesList .thumbnails .movie .director, .moviesList .thumbnails .movie .stars {
+    font-size: 2.3vw; }
+  .player {
+    margin-top: 8%; }
+    .player .alert {
+      width: 95vw; }
+    .player .player-block {
+      width: 95vw; }
+      .player .player-block .video video {
+        width: 94.94vw; }
+      .player .player-block .video-infos .movie .movie-basics {
+        font-size: 3vw; }
+      .player .player-block .video-infos .movie .imdb-rating {
+        font-size: 3vw; }
+      .player .player-block .video-infos .movie h4 {
+        font-size: 4vw; }
+      .player .player-block .video-infos .movie .plot, .player .player-block .video-infos .movie .director, .player .player-block .video-infos .movie .stars {
+        font-size: 3vw; } }
+
+@media only screen and (max-width: 1000px) {
+  .player {
+    margin-top: 8%; }
+    .player .alert {
+      width: 75vw; }
+    .player .player-block {
+      width: 75vw; }
+      .player .player-block .video video {
+        width: 74.94vw; }
+      .player .player-block .video-infos .movie .movie-basics {
+        font-size: 2vw; }
+      .player .player-block .video-infos .movie .imdb-rating {
+        font-size: 2vw; }
+      .player .player-block .video-infos .movie h4 {
+        font-size: 3vw; }
+      .player .player-block .video-infos .movie .plot, .player .player-block .video-infos .movie .director, .player .player-block .video-infos .movie .stars {
+        font-size: 2vw; } }
+
+body {
+  background-image: url("../img/bg.jpg"); }
+
+footer {
+  margin-top: 36px;
+  margin-bottom: 16px;
+  z-index: 2; }

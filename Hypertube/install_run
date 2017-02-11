@@ -1,0 +1,10 @@
+#!/bin/bash
+cd app
+npm install
+bower install
+npm run build-css
+npm run start &
+cd ../spider
+npm install
+node movie_spider/cleaner.js &
+npm run start

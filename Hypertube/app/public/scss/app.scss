@@ -1,0 +1,46 @@
+nav {
+	box-shadow: 0 0 12px #DDD;
+	border-bottom: 1px solid #CCC !important;
+	border-left: 5px solid #777 !important;
+
+	#lang-choice {
+		margin-top: 8px;
+	}
+
+	#filters {
+		margin-top: 8px;
+		margin-left: 15px;
+	}
+
+	#filters button {
+		outline: none;
+	}
+
+	#lang-choice > button {
+		outline: none !important;
+		filter : grayscale(100%);
+		-webkit-filter : grayscale(100%);
+	}
+
+	#lang-choice > button:disabled {
+		filter : grayscale(0%);
+		-webkit-filter : grayscale(0%);
+	}
+
+	.navbar-brand {
+		font-weight: 200;
+	}
+
+	.navbar-form {
+		input {
+			border-radius: 4px 0 0 4px;
+			width: 30vw !important;
+		}
+
+		button {
+			border-radius: 0 4px 4px 0;
+			position: relative;
+			left: -4px;
+		}
+	}
+}

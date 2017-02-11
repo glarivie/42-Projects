@@ -1,0 +1,24 @@
+.homepage {
+
+	.jumbotron {
+		max-width: 49vw;
+		background-image: url('../img/home-bg4.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		box-shadow: 0 0 12px #CCC;
+		margin-top: 6%;
+
+		h1 {
+			font-weight: lighter;
+			padding-left: 60px;
+			margin-left: -60px;
+			border-left: 7px solid $primary;
+			margin-bottom: 32px;
+		}
+
+		.btn {
+			width: 76%;
+		}
+	}
+}

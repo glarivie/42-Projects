@@ -1,0 +1,78 @@
+.userpage {
+	.jumbotron {
+		max-width: 55vw;
+		background-color: #FFF;
+		box-shadow: 0 0 12px #CCC;
+		margin-top: 4%;
+
+		h2 {
+			margin-top: 0;
+		}
+
+		.page-change {
+			margin-top: 8px;
+		}
+
+		.part {
+			background-color: #FFF;
+			color: #DDD;
+			font-weight: 200;
+			font-size: small;
+			padding-left: 6px;
+			padding-right: 6px;
+			position: relative;
+			top: 29px;
+			left: 41.5%;
+			z-index: 1;
+		}
+
+		.section {
+			margin-top: 35px;
+		}
+
+		p {
+			font-size: inherit !important;
+			font-weight: 400;
+			margin-bottom: 0;
+		}
+
+		small {
+			width: 100%;
+			display: block;
+		}
+
+		.form-group {
+			position: relative;
+			margin-bottom: 20px;
+
+			input[type="file"] {
+				color: #999;
+				font-size: small;
+				vertical-align: top;
+			}
+
+			label {
+				position: absolute;
+				top: -13px;
+				left: 4px;
+				background-color: #FFF;
+				padding-left: 3px;
+				padding-right: 3px;
+				font-weight: 500;
+			}
+
+			#forgot {
+				position: absolute;
+				top: 8px;
+				right: 8px;
+				z-index: 2;
+				font-size: small;
+			}
+		}
+
+		.btn {
+			width: 100%;
+			margin-bottom: 8px;
+		}
+	}
+}

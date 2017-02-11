@@ -1,0 +1,74 @@
+<div class="container-fluid player">
+	<div id="metadata" class="alert alert-info alert-dismissible center-block hidden" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<i class="fa fa-database" aria-hidden="true"></i>&nbsp; Video metadata successfully loaded !
+	</div>
+	<div id="ready" class="alert alert-success alert-dismissible center-block hidden" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp; Video is ready to play !
+	</div>
+	<div class="row center-block player-block">
+		<div class="video">
+			<video id="video" data-id="{{ params.id }}" data-resolution="{{ params.resolution }}" controls preload="auto">
+				<source src="http://localhost:8000/torrent?id={{ params.id }}&resolution={{ params.resolution }}" type="video/mp4" />
+			</video>
+		</div>
+		<span class="part">About movie</span>
+		<hr />
+		<div class="video-infos">
+			<div class="movie">
+				<div class="poster" style="background-image: url('{{ movie.poster }}');"></div>
+				<div class="movie-infos">
+					<h4>{{ movie.title }} ({{ movie.year }})</h4>
+					<small class="movie-basics text-muted">
+						<span class="rated">{{ movie.rated }}</span>
+						{{ movie.runtime }} - {{ movie.genres }}
+					</small>
+					<p class="imdb-rating"><strong>IMDB Rating: {{ movie.imdb.rating }}</strong>/10 ({{ movie.imdb.votes }})</p>
+					<p class="plot"><strong>Synopsis:</strong> <em>{{ movie.plot }}</em></p>
+					<p class="director"><strong>Director: </strong>{{ movie.director }}</p>
+					<p class="stars"><strong>Stars: </strong>{{ movie.actors }}</p>
+					<div class="other-resolutions">
+						{{#each movie.resolutions}}
+							{{#if this.link}}
+								<a href="{{ this.link }}" type="button" class="btn btn-default btn-sm"><i class="fa fa-play-circle" aria-hidden="true"></i> <strong>{{ this.resolution }}</strong> <em>({{ this.seeds }})</em></a>
+							{{/if}}
+						{{/each}}
+					</div>
+				</div>
+			</div>
+		</div>
+		<span class="part">Comments</span>
+		<hr />
+		<div class="comments">
+			<div class="form-group">
+				<textarea class="form-control" rows="3" id="comment-area"></textarea>
+				<button id="comment-btn" type="button" class="btn btn-primary" disabled><i class="fa fa-comment" aria-hidden="true"></i> Add my comment</button>
+			</div>
+			<div id="comments-list" class="row">
+				{{#each movie.comments}}
+					<div class="col-md-12 comment-block" id="{{ this.id }}">
+						<div class="avatar img-rounded img-responsive" style="background-image: url('{{ this.user.avatar }}');"></div>
+
+
+						<div class="panel panel-default content">
+							<div class="panel-heading username">
+								<strong><a href="/app/user/{{ this.user.id }}">{{ this.user.firstname }} {{ this.user.lastname }}</a></strong> <small class="text-muted date">{{ this.date }}</small>
+								<span class="pull-right delete-comment" data-comment-id="{{ this.id }}"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+							</div>
+							<div class="panel-body text">
+								<em>{{ this.text }}</em>
+							</div><!-- /panel-body -->
+						</div><!-- /panel panel-default -->
+						<small class="comment-error text-danger hidden"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> You can't delete this comment</small>
+					</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--<script type="text/javascript" src="/js/videosub.js"></script> -->
+<script type="text/javascript" src="//cdn.embed.ly/player-0.0.11.min.js"></script>
+<script type="text/javascript" src="/js/mylib.js"></script>
+<script type="text/javascript" src="/js/player.js"></script>

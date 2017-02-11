@@ -1,0 +1,88 @@
+.moviesList {
+	margin-top: 5%;
+
+	.thumbnails {
+		padding: 10px;
+
+		.movie {
+			position: relative;
+			background-color: #FFF;
+			border: 1px solid #CCC;
+			padding: 10px;
+			border-radius: 4px;
+			box-shadow: 0 0 8px #DDD;
+			margin-bottom: 20px;
+			height: 230px;
+
+
+			.poster {
+				background-size: cover;
+				position: relative;
+				margin-right: 10px;
+				width: 138px;
+				height: 207px;
+				float: left;
+
+				.resolutions {
+					position: absolute;
+					top: 10px;
+					left: 1px;
+					width: 136px;
+
+					.btn {
+						width: 100%;
+						margin-bottom: 10px;
+						color: #000;
+						border: none;
+						border-radius: 0;
+						background-color: rgba(255, 255, 255, 0.8);
+					}
+
+					.btn:hover, .btn:focus {
+						cursor: pointer;
+						background-color: rgba(255, 255, 255, 1.0);
+					}
+				}
+			}
+
+			.poster:hover, .poster:focus {
+				filter : grayscale(100%);
+				-webkit-filter : grayscale(100%);
+			}
+
+			.movie-infos {
+				max-height: 202px;
+				overflow: hidden;
+			}
+
+			.movie-basics {
+				font-size: 0.8vw;
+
+				.rated {
+					border: 1px solid #777;
+					padding: 1px 4px;
+					margin-right: 4px;
+					font-weight: bold;
+				}
+			}
+
+			.imdb-rating {
+				margin-top: 3px;
+				font-size: 0.95vw;
+				margin-bottom: 3px;
+			}
+
+			h4 {
+				color: $primary;
+				margin-bottom: 2px;
+				margin-top: 4px;
+				font-size: 1.4vw;
+			}
+
+			.plot, .director, .stars {
+				font-size: 1vw;
+				margin-bottom: 2px;
+			}
+		}
+	}
+}

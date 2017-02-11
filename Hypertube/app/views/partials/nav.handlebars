@@ -1,0 +1,35 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/app/library">HYPER<strong>TUBE</strong></a>
+		</div>
+		<div class="collapse navbar-collapse" id="menu-left">
+			<form class="navbar-form navbar-left" id="search-form" role="search">
+				<div class="form-group">
+					<input id="search-field" type="text" class="form-control" placeholder="Search" />
+				</div>
+				<button id="search-btn" type="submit" class="btn btn-default" disabled><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+			</form>
+			<li class="btn-group hidden-xs hidden-sm" id="lang-choice" data-user-lang="{{ language }}" role="group" aria-label="...">
+				<button id="EN" data-lang="EN" type="button" class="btn btn-default"><i class="famfamfam-flag-us"></i></button>
+				<button id="FR" data-lang="FR" type="button" class="btn btn-default"><i class="famfamfam-flag-fr"></i></button>
+			</li>
+			{{#if isLibrary}}
+				<li class="btn-group hidden-xs hidden-sm hidden-md" id="filters" role="group" aria-label="...">
+					<button id="filter-a-z" type="button" class="btn btn-default"><i class="fa fa-video-camera" aria-hidden="true"></i> A - Z</button>
+					<button id="filter-z-a" type="button" class="btn btn-default"><i class="fa fa-video-camera" aria-hidden="true"></i> Z - A</button>
+					<button id="filter-note" type="button" class="btn btn-default"><i class="fa fa-star" aria-hidden="true"></i> Rating</button>
+					<button id="filter-year" type="button" class="btn btn-default"><i class="fa fa-calendar" aria-hidden="true"></i> Year</button>
+				</li>
+			{{/if}}
+			<ul class="nav navbar-nav navbar-right">
+				<li class="profile-nav"><a href="/app/profile"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span id="nav-username" class="text-capitalize">{{#if firstname}}{{firstname}}{{else}}Profile{{/if}}</span></a></li>
+				<li class="library-nav"><a href="/app/library"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Library</a></li>
+				<li><a href="/logout"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<script type="text/javascript" src="/js/mylib.js"></script>
+<script type="text/javascript" src="/js/nav.js"></script>

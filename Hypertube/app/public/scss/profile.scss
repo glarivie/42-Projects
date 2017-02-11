@@ -1,0 +1,217 @@
+.profile {
+	margin-top: 6%;
+	max-width: 650px;
+
+	.alert {
+		box-shadow: 0 0 8px #DDD;
+	}
+
+	.top-modif {
+		position: relative;
+		top: -30px;
+	}
+
+	.player-block {
+		padding: 10px;
+		background-color: #FFF;
+		border-radius: 6px;
+		max-width: 95%;
+		box-shadow: 0 0 12px #DDD;
+
+		.part {
+			background-color: #FFF;
+			color: #DDD;
+			font-weight: 200;
+			font-size: small;
+			padding-left: 6px;
+			padding-right: 6px;
+			position: relative;
+			top: 4px;
+			left: 41.5%;
+			z-index: 1;
+		}
+
+		hr {
+			margin-top: -5px !important;
+		}
+
+		.video-infos {
+			display: inline-block;
+			vertical-align: top;
+			max-width: 138px;
+			margin-right: 11px;
+
+			.movie {
+				position: relative;
+
+				.poster {
+					background-size: cover;
+					position: relative;
+					margin-right: 10px;
+					width: 138px;
+					height: 207px;
+				}
+
+				.poster:hover, .poster:focus {
+					filter : grayscale(100%);
+					-webkit-filter : grayscale(100%);
+				}
+			}
+		}
+
+		.video-infos:last-child {
+			margin-right: 0 !important;
+		}
+	}
+
+
+
+	.profile-info {
+		position: relative;
+		min-height: 250px;
+		width: 100%;
+		z-index: 1;
+		border-radius: 4px;
+		color: #FFF;
+		box-shadow: 0 6px 8px #DDD;
+		background-repeat: no-repeat;
+		background-position: right;
+		background-size: contain;
+
+		.public-user {
+			padding-left: 25px;
+		}
+
+		.gradient-filter {
+			background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+			background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 60%,rgba(0,0,0,0) 100%);
+			background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 60%,rgba(0,0,0,0) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
+
+			min-height: 250px;
+			width: 100%;
+			z-index: 2;
+			border-radius: 4px;
+
+			.hello {
+				font-weight: 100;
+				padding-left: 25px;
+				padding-top: 28px;
+				margin-bottom: 4px;
+				font-size: 28px;
+				color: #888;
+			}
+
+			h1 {
+				font-weight: 100;
+				font-size: 48px;
+				padding-left: 21px;
+				border-left: 4px solid #FFF;
+				margin-top: 0;
+			}
+
+			h3 {
+				font-weight: 100;
+				padding-left: 25px;
+				margin-top: 0;
+			}
+
+			.mailaddress {
+				font-weight: 100;
+				padding-left: 25px;
+			}
+
+			.edit-info-icon {
+				position: absolute;
+				font-size: 24px;
+				bottom: 8px;
+				right: 16px;
+			}
+
+			.edit-info-icon:hover, .edit-info-icon:focus {
+				cursor: pointer;
+				color: $primary;
+			}
+		}
+	}
+
+	.jumbotron {
+		z-index: 0;
+		box-shadow: 0 0 8px #DDD;
+		max-width: 95%;
+		background-color: #FFF;
+		position: relative;
+		top: -50px;
+
+		h2 {
+			margin-top: 0;
+		}
+
+		.page-change {
+			margin-top: 8px;
+		}
+
+		.part {
+			background-color: #FFF;
+			color: #DDD;
+			font-weight: 200;
+			font-size: small;
+			padding-left: 6px;
+			padding-right: 6px;
+			position: relative;
+			top: 29px;
+			left: 41.5%;
+			z-index: 1;
+		}
+
+		.section {
+			margin-top: 35px;
+		}
+
+		p {
+			font-size: inherit !important;
+			font-weight: 400;
+			margin-bottom: 0;
+		}
+
+		small {
+			width: 100%;
+			display: block;
+		}
+
+		.form-group {
+			position: relative;
+			margin-bottom: 20px;
+
+			input[type="file"] {
+				color: #999;
+				font-size: small;
+				vertical-align: top;
+			}
+
+			label {
+				position: absolute;
+				top: -13px;
+				left: 4px;
+				background-color: #FFF;
+				padding-left: 3px;
+				padding-right: 3px;
+				font-weight: 500;
+				border-radius: 0 0 6px 6px;
+			}
+
+			#forgot {
+				position: absolute;
+				top: 8px;
+				right: 8px;
+				z-index: 2;
+				font-size: small;
+			}
+		}
+
+		button {
+			width: 100%;
+			margin-bottom: 8px;
+		}
+	}
+}

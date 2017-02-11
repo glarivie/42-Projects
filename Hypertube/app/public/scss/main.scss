@@ -1,0 +1,21 @@
+$primary : #337ab7;
+$border : #2e6da4;
+
+@import 'homepage';
+@import 'register';
+@import 'app';
+@import 'profile';
+@import 'library';
+@import 'player';
+@import 'comments';
+@import 'mobile';
+
+body {
+	background-image: url('../img/bg.jpg');
+}
+
+footer {
+	margin-top: 36px;
+	margin-bottom: 16px;
+	z-index: 2;
+}

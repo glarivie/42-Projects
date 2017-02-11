@@ -1,0 +1,69 @@
+<div class="container-fluid profile-page">
+	<div class="row profile center-block">
+		<div class="alert alert-info alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<strong>Welcome on your profile page !</strong> You can edit all your informations here. Click on the <i class="fa fa-cog" aria-hidden="true"></i> icon.
+		</div>
+
+		<div class="profile-info" id="public-avatar" style="background-image: url('{{ user.avatar }}')">
+			<div class="gradient-filter">
+				<p class="hello lead">Hello I am,</p>
+				<h1 class="text-uppercase"><span id="public-firstname">{{ user.firstname }}</span> <strong id="public-lastname">{{ user.lastname }}</strong></h1>
+				<h3><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp; aka. <strong class="username" id="public-username">{{ user.username }}</strong></h3>
+				<p class="mailaddress"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; <em id="public-mail">{{ user.mail }}</em></p>
+				<a class="public-user" href="/app/user/{{ user._id }}"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; View my public profile</a>
+				<span class="edit-info-icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+			</div>
+		</div>
+
+		<form class="edit-infos jumbotron center-block hidden" autocomplete="off">
+			<div class="row section">
+				<div class="col-md-6 col-xs-12">
+					<div class="form-group username-field">
+						<label for="username">Username</label>
+						<input type="text" class="form-control" id="username" placeholder="Username" autocomplete="off" value="{{ user.username }}" disabled />
+					</div>
+					<div class="form-group password-field">
+						<label for="password">Password</label>
+						<input type="password" class="form-control" id="password" placeholder="Password" autocomplete="off" required />
+					</div>
+					<div class="form-group mail-field">
+						<label for="mail">Mail</label>
+						<input type="mail" class="form-control" id="mail" placeholder="Mail" autocomplete="off" value="{{ user.mail }}" required />
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<div class="form-group firstname-field">
+						<label for="firstname">First name</label>
+						<input type="text" class="form-control" id="firstname" placeholder="First name" autocomplete="off" value="{{ user.firstname }}" required />
+					</div>
+					<div class="form-group lastname-field">
+						<label for="lastname">Last name</label>
+						<input type="text" class="form-control" id="lastname" placeholder="Last name" autocomplete="off" value="{{ user.lastname }}" required />
+					</div>
+					<div class="form-group avatar-field" data-avatar="{{ user.avatar }}">
+						<label for="avatar">Avatar</label>
+						<input type="file" class="form-control" id="avatar" />
+					</div>
+				</div>
+			</div>
+
+			<button id="profile-btn" type="button" class="btn btn-primary"><i class="fa fa-sign-in" aria-hidden="true"></i> Submit my new details</button>
+		</form>
+
+		<div class="row center-block player-block">
+			<span class="part">Recently viewed :</span>
+			<hr />
+			{{#each user.history}}
+				<div class="video-infos">
+					<a class="movie" href="{{ link }}">
+						<div class="poster" style="background-image: url('{{ poster }}');"></div>
+					</a>
+				</div>
+			{{/each}}
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="/js/mylib.js"></script>
+<script type="text/javascript" src="/js/profile.js"></script>
