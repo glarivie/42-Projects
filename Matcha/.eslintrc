@@ -1,0 +1,29 @@
+{
+  "extends": "airbnb-base",
+  "parser": "babel-eslint",
+  "rules": {
+    "strict": 0,
+    "import/no-unresolved": 0,
+    "max-len": 0,
+    "no-underscore-dangle": 0,
+    "no-continue": 0,
+    "newline-per-chained-call": 0,
+    "no-multiple-empty-lines": 0,
+    "eol-last": 0,
+    "no-param-reassign": 0,
+    "no-useless-escape": 0,
+    "no-mixed-operators": 0,
+    "arrow-parens": 0,
+    "no-shadow": 0,
+    "no-plusplus": 0,
+    "curly": 0
+  },
+  "globals": {
+    "fetch": false,
+    "window": false,
+    "document": false,
+    "$": false,
+    "google": 0,
+    "navigator": 0
+  }
+}

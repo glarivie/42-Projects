@@ -1,0 +1,115 @@
+// Birdfolio Blues color palette
+$DarkBlue : #2B3A42;
+$MedBlue : #3F5765;
+$LightBlue : #DCC4DE;
+$LightWhite : #EFEFEF;
+$OrangeCTA : #FF530D;
+$myYellow : #f0ad4e;
+$yellowBorder : #faebcc;
+$yellowBackground : #fcf8e3;
+$yellowFont : #8a6d3b;
+
+.messages-body {
+	background-color: $LightWhite;
+
+	.matcha-messages {
+		max-width: 923px;
+		margin-top: 70px;
+	}
+
+	#send-message {
+		button {
+			width: 100%;
+			margin-top: 5px;
+		}
+	}
+
+
+	#messages {
+		.panel-body {
+			.discussion {
+				.messages {
+					span.img-circle {
+						display: inline-block;
+						vertical-align: middle;
+						width: 34px;
+						height: 34px;
+						background-size: cover;
+						background-position: center;
+					}
+
+					p.message-content {
+						display: inline-block;
+						vertical-align: baseline;
+						padding: 5px 15px;
+						border-radius: 10px;
+					}
+
+					small.text-muted {
+						position: absolute;
+						color: #BBB;
+						font-size: 75%;
+					}
+
+					.message-single {
+						position: relative;
+						margin-bottom: 18px;
+					}
+
+					.received {
+						padding-right: 25%;
+
+						p.message-content {
+							background-color: $LightWhite;
+							color: #555;
+						}
+
+						span.img-circle {
+							margin-right: 10px;
+						}
+
+						small.text-muted {
+							bottom: -8px;
+							left: 45px;
+						}
+					}
+
+					.sent {
+						padding-left: 25%;
+
+						p.message-content {
+							background-color: $yellowBackground;
+							color: $yellowFont;
+						}
+
+						span.img-circle {
+							margin-left: 10px;
+						}
+
+						small.text-muted {
+							bottom: -8px;
+							right: 45px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.panel {
+		.media-object {
+			width: 71px;
+			height: 71px;
+			background-size: cover;
+			background-position: center;
+		}
+
+		.btn {
+			width: 100%;
+		}
+
+		a.btn {
+			margin-bottom: 3px;
+		}
+	}
+}

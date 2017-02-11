@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{{title}}</title>
+		<link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="/css/main.css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+		<link rel="stylesheet" href="/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css" />
+		<link rel="icon" type="image/png" href="/img/favicon.png" />
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3sBJxfVvWi7lTho6zvsaLm_-0zhCdDCI"></script> -->
+		<script type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="/moment/min/moment-with-locales.min.js"></script>
+		<script type="text/javascript" src="/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+		<script type="text/javascript" src="/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"></script>
+		<script type="text/javascript" src="/jquery-dateFormat/dist/jquery-dateFormat.min.js"></script>
+		<script type="text/javascript" src="/jquery-geolocation/jquery.geolocation.min.js"></script>
+	</head>
+	<body class="body {{bodyPage}}">
+		{{#if isNotHome}}
+			{{> nav}}
+		{{else}}
+			<video autoplay loop id="bgvid">
+				<source src="/img/matcha.mp4" type="video/mp4">
+			</video>
+		{{/if}}
+		{{{body}}}
+		{{> footer}}
+	</body>
+</html>

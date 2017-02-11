@@ -1,0 +1,92 @@
+<div class="container-fluid matcha-around">
+
+	<div class="well">
+		<div class="row filters">
+			<div class="col-md-4 col-xs-12">
+				<div class="form-group blk-filters">
+					<span class="label-filters">Age range</span>
+					<input id="age"
+						type="text"
+						data-slider-id="age-slider"
+						data-provide="slider"
+						value=""
+						data-slider-min="18"
+						data-slider-max="99"
+						data-slider-step="1"
+						data-slider-value="[18, 99]"
+						data-slider-tooltip_position="bottom"
+					/>
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="form-group blk-filters">
+					<span class="label-filters">Distance from me</span>
+					<input id="distance"
+						type="text"
+						data-slider-id="distance-slider"
+						data-provide="slider"
+						value=""
+						data-slider-min="0"
+						data-slider-max="600"
+						data-slider-step="50"
+						data-slider-value="[0, 600]"
+						data-slider-tooltip_position="bottom"
+					/>
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="form-group blk-filters">
+					<span class="label-filters">Popularity score range</span>
+					<input id="popularity"
+						type="text"
+						data-slider-id="pop-slider"
+						data-provide="slider"
+						value=""
+						data-slider-min="0"
+						data-slider-max="100"
+						data-slider-step="5"
+						data-slider-value="[0, 100]"
+						data-slider-tooltip_position="bottom"
+					/>
+				</div>
+			</div>
+		</div>
+		<div class="row filters">
+			<div class="col-md-12">
+				<center>
+					<span class="label-filters">My interests tags</span>
+					{{#each myInterests}}
+						<button type="button" class="btn btn-warning btn-xs btn-filters"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> <span class="span-interest">{{this}}</span></button>
+					{{/each}}
+				</center>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row profiles-around">
+		{{#each users}}
+
+		<div class="col-md-3 col-xs-12 div-profil">
+			<div class="thumbnail profil"
+				data-age="{{age}}"
+				data-popularity="{{popularity}}"
+				data-distance="{{distance}}"
+				data-interests="{{#each interests}}{{this}},{{/each}}">
+				<a href="/user/{{_id}}"><div class="img" style="background-image : url('{{photo}}');"></div></a>
+				<div class="caption">
+					<h5><span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{firstname}} {{infos.lastname}}</h5>
+					<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> {{city}}, {{location.country}}</p>
+					<p><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> About <strong>{{distance}}</strong> km</p>
+					{{#each interests}}
+						<button type="button" class="btn btn-warning btn-xs btn-tag"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> <span class="span-interest">{{this}}</span></button>
+					{{/each}}
+				</div>
+			</div>
+		</div>
+
+		{{/each}}
+	</div>
+</div>
+
+<script type="text/javascript" src="/js/around.js"></script>

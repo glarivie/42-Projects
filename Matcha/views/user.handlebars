@@ -1,0 +1,196 @@
+<div class="container-fluid matcha-profile">
+	<div class="profile-header">
+
+		<div class="header-picture" style="background-image : url('{{user.photos.cover}}');"></div>
+
+		<div class="profile-picture">
+			<div id="profile-pic" class="profile img-circle" style="background-image : url('{{user.photos.profile}}');"></div>
+		</div>
+		<div class="main-infos name">
+			<h2 id="first-last"><span id="user-first">{{user.infos.firstname}}</span> <span id="user-last">{{user.infos.lastname}}</span></h2>
+		</div>
+
+		<ul class="nav nav-tabs menu-profile">
+			<li role="presentation" class="active"><a href="#About">About</a></li>
+			<li role="presentation"><a href="#Photos">Photos</a></li>
+		</ul>
+	</div>
+
+	<div class="row profile-timeline tab-menu" id="tab-about">
+		<div class="col-md-5 about-me">
+			<div class="btn-group actions" role="group" aria-label="...">
+				<button id="like" type="button" class="btn btn-default"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> <span class="badge">{{ likes }}</span></button>
+				<a href="/user/{{user._id}}" class="btn btn-default disabled" role="button"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+				<button id="report" type="button" class="btn btn-default"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+			</div>
+
+			<div class="panel panel-warning">
+				<div class="panel-heading"><h3 class="panel-title">Biography</h3></div>
+				<div class="panel-body">
+					<span id="span-bio">{{user.infos.biography}}</span>
+				</div>
+			</div>
+
+			<div class="panel panel-warning">
+				<div class="panel-heading"><h3 class="panel-title">Location</h3></div>
+				<div class="panel-body">
+					<h5 id="location"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <span id="span-location">
+						{{#if user.location}}
+							{{#if user.location.address}}
+								{{user.location.address}}
+							{{else}}
+								{{user.location.city}}, {{user.location.country}}
+							{{/if}}
+						{{else}}
+							User did not set his location yet.
+						{{/if}}
+					</h5>
+					<img id="geo-map" src="" class="hidden" data-latitude="{{user.location.latitude}}" data-longitude="{{user.location.longitude}}" />
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-7 details">
+			<div class="panel panel-warning">
+				<div class="panel-heading"><h3 class="panel-title">Details</h3></div>
+				<div class="panel-body">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>Popularity</th>
+								<th id="popularity">0%</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">Connected</th>
+								<td id="connected">{{user.last}}</td>
+							</tr>
+							<tr>
+								<th scope="row">Birthdate</th>
+								<td>{{user.infos.birthdate}}</td>
+							</tr>
+							<tr>
+								<th scope="row">Age</th>
+								<td>{{age}} years old</td>
+							</tr>
+							<tr>
+								<th scope="row">Sex</th>
+								<td>
+									<span id="sex"><span id="span-sex">{{user.infos.sex}}</span></span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">Orientation</th>
+								<td>
+									<span id="orientation"><span id="span-orientation">{{user.infos.orientation}}</span></span></span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">Interests</th>
+								<td><span id="interests">
+									{{#each user.interests}}
+										<button type="button" class="btn btn-warning btn-xs btn-tag"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> <span class="span-interest">{{this}}</span></button>
+									{{/each}}
+									</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="panel panel-warning">
+				<div class="panel-heading"><h3 class="panel-title">Recently visited</h3></div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-4 col-xs-4">
+							<div class="thumbnail hidden" id="visit0">
+								<a href="#"><div class="img"></div></a>
+								<div class="caption">
+									<h5></h5>
+									<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <span class="location"></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="thumbnail hidden" id="visit1">
+								<a href="#"><div class="img"></div></a>
+								<div class="caption">
+									<h5></h5>
+									<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <span class="location"></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="thumbnail hidden" id="visit2">
+								<a href="#"><div class="img"></div></a>
+								<div class="caption">
+									<h5></h5>
+									<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <span class="location"></span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel panel-warning">
+				<div class="panel-heading"><h3 class="panel-title">Recently liked you</h3></div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-4 col-xs-4">
+							<div class="thumbnail hidden" id="like0">
+								<a href="#"><div class="img"></div></a>
+								<div class="caption">
+									<h5></h5>
+									<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <span class="location"></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="thumbnail hidden" id="like1">
+								<a href="#"><div class="img"></div></a>
+								<div class="caption">
+									<h5></h5>
+									<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <span class="location"></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="thumbnail hidden" id="like2">
+								<a href="#"><div class="img"></div></a>
+								<div class="caption">
+									<h5></h5>
+									<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <span class="location"></span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row photos-tab tab-menu hidden" id="tab-photos">
+		<div class="col-md-12">
+			<div class="panel panel-warning" id="panel-photos">
+				<div class="panel-heading"><h3 class="panel-title">My pictures</h3></div>
+				<div class="panel-body">
+					<div class="row">
+						{{#each gallery}}
+
+						<div class="blk-photo col-md-4 col-xs-12">
+							<div class="thumbnail" id="{{@key}}">
+								<div class="img" style="background-image : url('{{this}}');"></div>
+							</div>
+						</div>
+
+						{{/each}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="/js/gmaps.min.js"></script>
+<script type="text/javascript" src="/js/user.js"></script>

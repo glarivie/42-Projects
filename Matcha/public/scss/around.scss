@@ -1,0 +1,62 @@
+// Birdfolio Blues color palette
+$DarkBlue : #2B3A42;
+$MedBlue : #3F5765;
+$LightBlue : #DCC4DE;
+$LightWhite : #EFEFEF;
+$OrangeCTA : #FF530D;
+$myYellow : #f0ad4e;
+$yellowBorder : #faebcc;
+$yellowBackground : #fcf8e3;
+$yellowFont : #8a6d3b;
+
+.profile-around {
+	background-color: $LightWhite;
+
+	.matcha-around {
+		max-width: 923px;
+		margin-top: 70px;
+
+		.img {
+			width: auto;
+			min-height: 190px;
+			background-position: center;
+			background-size: cover;
+		}
+
+		.profil {
+			min-height: 386px;
+		}
+
+		button {
+			margin-bottom: 2px;
+		}
+
+		.label-filters {
+			width: 100%;
+			display: block;
+			font-weight: 700;
+			margin-bottom: 4px;
+		}
+
+		.blk-filters {
+			margin-left: 6%;
+
+			.slider {
+				margin-left: 10px;
+
+				.slider-selection {
+					background: #F7DCB5;
+				}
+
+				.slider-handle {
+					background: $myYellow;
+					border: 1px solid $yellowBorder;
+				}
+
+				.slider-tick {
+					background: #EFCD9C;
+				}
+			}
+		}
+	}
+}

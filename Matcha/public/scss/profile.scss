@@ -1,0 +1,240 @@
+$LightWhite : #EFEFEF;
+$myYellow : #f0ad4e;
+$yellowBorder : #faebcc;
+$yellowBackground : #fcf8e3;
+$yellowFont : #8a6d3b;
+$DarkBlue : #2B3A42;
+$MedBlue : #3F5765;
+$LightBlue : #DCC4DE;
+
+#geo-map {
+	width: 100%;
+}
+
+.actions {
+	width: 100%;
+	margin-bottom: 20px;
+
+	.btn {
+		width: 33.4% !important;
+	}
+}
+
+.table {
+	margin-bottom: 0 !important;
+}
+
+.profile-body {
+	background-color: $LightWhite;
+
+	.matcha-profile {
+		max-width: 923px;
+		margin-top: 28px;
+
+		.details {
+			.input-group-btn {
+				//width: 100% !important;
+			}
+
+			.thumbnail {
+				margin-bottom: 0;
+			}
+		}
+
+		.profile-header {
+			height: 400px;
+			position: relative;
+
+
+			.header-picture {
+				width: 100%;
+				min-height: 310px;
+				background-image: url('http://fakeimg.pl/890x310/');
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-position: center;
+				border-radius: 4px;
+
+				#bg-change {
+					position: relative;
+					left: 85%;
+					top: 42px;
+				}
+
+				#btn-cover {
+					position: relative;
+					left: 86%;
+					top: 42px;
+					font-size: 12px;
+					line-height: 1.5em;
+					padding: 1px 5px;
+					max-height: 22px;
+				}
+			}
+
+			.profile-picture {
+				position: absolute;
+				top: 160px;
+				left: 20px;
+				z-index: 2;
+
+				img {
+					border: 5px solid $LightWhite;
+				}
+
+				#img-change {
+					position: relative;
+					bottom: 70px;
+				}
+
+				.profile {
+					background-image: url('http://fakeimg.pl/200x200/');
+					border: 5px solid $LightWhite;
+					vertical-align: middle;
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center;
+					width: 200px;
+					height: 200px;
+				}
+			}
+
+			.name {
+				top:240px !important;
+			}
+
+			.main-infos {
+				position: absolute;
+				top: 200px;
+				left: 240px;
+				width: 42%;
+
+				#first-last {
+					color: #FFF;
+					text-shadow: 0 0 8px #999;
+				}
+
+				#mail {
+					color: $LightWhite;
+					text-shadow: 0 0 8px #999;
+				}
+			}
+		}
+
+		.photos-tab {
+			.img {
+				background-image: url('http://fakeimg.pl/300x300/');
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+				width: auto;
+				min-height: 256px;
+			}
+		}
+
+		.details {
+			.img {
+				background-image: url('http://fakeimg.pl/200x200/');
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+				width: auto;
+				min-height: 128px;
+			}
+		}
+
+		.nav-tabs {
+			margin-left: 205px;
+		}
+	}
+
+	#bio-area-edit button {
+		width: 100%;
+		margin-top: 6px;
+	}
+
+	#form-first-last {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	#form-sex, #form-orientation {
+		margin-top: -4px;
+		margin-bottom: -4px;
+	}
+
+	#add-interest:hover, #add-interest:focus {
+		cursor: pointer;
+		color: #ec971f;
+	}
+
+	.nav-tabs>li>a, .nav-tabs>li>a {
+		color: $DarkBlue;
+		background-color: inherit;
+		border-bottom: 4px solid transparent;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+	}
+
+	.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+		color: $yellowFont;
+		cursor: default;
+		font-weight: 500;
+		background-color: inherit;
+		border-bottom: 4px solid $myYellow;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+	}
+
+	.panel-heading {
+		h3, button {
+			display: inline-block;
+		}
+
+		button {
+			float: right;
+		}
+	}
+
+	.nav-tabs>li>a:focus, .nav-tabs>li>a:hover {
+		color: $MedBlue;
+		cursor: pointer;
+		background-color: inherit;
+		border-bottom: 4px solid $MedBlue;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+	}
+
+	.btn-tag {
+		margin-bottom: 2px;
+	}
+
+	.thumbnail {
+
+		img:hover img:focus {
+			-webkit-filter:grayscale(1);
+			-moz-filter:grayscale(1);
+			-o-filter:grayscale(1);
+			-ms-filter:grayscale(1);
+			filter:grayscale(1);
+		}
+
+		.btn-group {
+			width: 100%;
+
+			.btn {
+				width: 33.5%;
+			}
+		}
+
+		.caption {
+			text-align: center;
+			padding-left: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+		}
+	}
+}

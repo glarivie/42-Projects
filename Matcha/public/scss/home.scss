@@ -1,0 +1,75 @@
+.home-body {
+	background-color: #FFF;
+
+	video#bgvid {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		-ms-transform: translateX(-50%) translateY(-50%);
+		-moz-transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+		background-size: cover;
+	}
+
+	h1 {
+		font-weight: 100;
+		margin-top: 0;
+		margin-left: -15px;
+		padding-left: 15px;
+		border-left: 5px solid #f0ad4e;
+	}
+
+	#forgot-button {
+		width: 100%;
+	}
+
+	.jumbotron {
+		background-color: rgba(255, 255, 255, 0.80);
+		max-width: 65%;
+		margin-top: 10%;
+
+		p#instructions {
+			font-size: 14px;
+			line-height: 18px;
+			text-align: justify;
+		}
+
+		.lead {
+			font-size: 18px;
+			color: #777;
+		}
+
+		button {
+			margin-right: 8px;
+		}
+
+		form {
+			margin-top: 6%;
+
+			.btn-link {
+				color: #f0ad4e !important;
+			}
+
+			.btn-link:hover, .btn-link:focus {
+				color: #eea236 !important;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.home-body {
+		h1 {
+			margin-left: -60px;
+			padding-left: 60px;
+			border-left: 5px solid #f0ad4e;
+		}
+	}
+}
