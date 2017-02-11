@@ -1,0 +1,446 @@
+body {
+	background-color : #EEE;
+}
+
+a:hover, a:active {
+	text-decoration: none;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover
+{
+	outline:0px !important;
+	-webkit-appearance:none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.mylogo .fa-apple:hover {
+	color: #333;
+}
+
+.ban-home, .nothome {
+	background-image: url('images/ban_header.jpg');
+	background-position: right;
+	position: relative;
+	width: 100%;
+	height: 450px;
+}
+
+.ban-home nav {
+	background-color: rgba(255, 255, 255, 0.4);
+	height: 46px;
+}
+
+.nothome nav {
+	background-color: rgba(255, 255, 255, 0.7);
+	height: 46px;
+}
+
+nav ul {
+	display: inline-block;
+	vertical-align: top;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.find {
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 62px;
+}
+
+.find .form-inline {
+	width: 366px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 14px;
+}
+
+.find .form-inline input[type="text"] {
+	width: 260px;
+	margin-right: 3px;
+	color: #B9B9B9;
+}
+
+.message {
+	color: #FFF;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+	margin-top: 170px;
+}
+
+.message .btn-success {
+	background-color: rgba(56, 134, 58, 0.75);
+	border-color: rgb(60, 118, 61);
+}
+
+.intro {
+	color: #333;
+	margin-top: 55px;
+	font-weight: bold;
+}
+
+.cities {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	width: 968px;
+}
+
+.cities h4 {
+	color: #FFF;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+	text-align: center;
+	font-size: 30px;
+	margin-top: 135px;
+}
+
+.city {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	margin-right: 10px;
+	position: relative;
+	width: 300px;
+	height: 300px;
+}
+
+.city:hover, .city h4:hover {
+	color: #96C2E8;
+}
+
+.center-align {
+	text-align: center;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.left-align {
+	text-align: left;
+}
+
+.nav-right li {
+	margin-top: 7px;;
+	margin-right: 3%;
+}
+
+.nav-logo li {
+	margin-top: 4px;
+	margin-right: 25px;;
+}
+
+.nav-right, .nav-logo {
+	width: 49%
+}
+
+.my-logo, .my-logo a {
+	font-size: 26px;
+	color: #FFF;
+}
+
+.cities .bruxelles {
+	background-image: url('images/bruxelles.jpg');
+	background-position: right;
+}
+
+.cities .londres {
+	background-image: url('images/londres.jpg');
+	background-position: center;
+}
+
+.cities .strasbourg {
+	background-image: url('images/strasbourg.jpg');
+}
+
+#footer .widget {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+#footer #sidebar {
+	margin: auto;
+}
+
+#footer {
+	margin-top: 53px;
+	background-color: #333;
+	font-size: 13px;
+	width: 100%;
+	color: #CCC;
+	padding-top: 18px;
+	padding-bottom: 11px;
+	padding-left: 28px;
+	padding-right: 28px;
+}
+
+#footer .textwidget {
+	padding-left: 48px;
+	padding-right: 48px;
+}
+
+#footer .xoxo{
+	padding: 0;
+}
+
+.my-search .input-group .input-sm {
+	width: 168px;
+}
+
+.menu-naviguer-container {
+	background-color: rgba(255, 255, 255, 0.7);
+	width: 104px;;
+	height: auto;
+	padding: 6px 16px 8px 16px;
+	position: absolute;
+	left: 305px;
+	top: 46px;
+}
+
+#menu-naviguer {
+	padding-left: 0;
+}
+
+#menu-naviguer li {
+	display: block;
+}
+
+#menu-naviguer li:hover {
+	font-weight: bold;
+}
+
+#menu-nav:hover, #menu-nav:active {
+	cursor: pointer;
+	color: #FFF;
+}
+
+.entry-wide {
+	text-align: justify;
+	color: #333;
+}
+
+#container {
+	padding-left: 90px;
+	padding-right: 90px;
+	padding-top: 46px;
+	padding-bottom: 40px;
+}
+
+.inline-room {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.auteur {
+	width: 15%;
+	text-align: center;
+}
+
+.auteur img {
+	border-radius: 50%;
+	display: block;
+	width: 96px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 4px solid #FFF;
+	box-shadow: 1px 2px #333;
+}
+
+.page-auteur img {
+	border-radius: 50%;
+	margin-left: 29px;
+	border: 4px solid #FFF;
+	box-shadow: 1px 2px #333;
+}
+
+.room {
+	width: 100%;
+	margin-top: 30px;
+}
+.description {
+	width: 50%;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+.description p {
+	text-align: justify;
+}
+
+.description .title {
+	margin-bottom: 42px;
+}
+
+.tab, .types .fa {
+	margin-left: 18px;
+}
+
+.infos {
+	width: 15%;
+}
+
+.infos h1 small {
+	font-size: 15px;
+}
+
+.options {
+	margin-bottom: 18px;
+}
+
+.infos .types {
+	margin-top: 42px;
+	margin-bottom: 28px;
+}
+
+.content h4 {
+	color: #777;
+}
+
+#comments {
+	margin-top: 33px;
+	background-color: #DDD;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 18px;
+	border-radius: 3px;
+}
+
+#comments button {
+	width: 100%;
+	margin-top: 8px;
+}
+
+#comments textarea {
+	color: #AAA;
+	border: 1px solid #868686;
+}
+
+#comments .btn-primary {
+	border-color: #135A98;
+}
+
+#comments h3 {
+	font-size: 20px;
+	margin-bottom: 5px;
+	padding-left: 1px;
+}
+
+#comments img {
+	background-image: url('images/glarivie.jpg');
+	display: none;
+}
+
+#comments .comment-meta, #comments .loggedin, #comments .logout {
+	font-size: 10px;
+	color: #777;
+}
+
+#comments .loggedin {
+	padding-left: 15px;
+	margin-top: -5px;
+}
+
+#comments .comment-author .n {
+	color: #666;
+}
+
+#comments ul li {
+	list-style: none;
+}
+
+#comments ul {
+	padding-left: 15px;
+}
+
+.comm-cancel {
+	margin: 0;
+}
+
+#comments .comment-content p {
+	padding-left: 15px;
+	padding-right: 15px;
+	font-style: italic;
+}
+
+#comments #login {
+	margin-top: -6px;
+}
+
+.entry .entry-title {
+	font-size : 20px;
+}
+
+.entry .entry-list-thumb, .entry .entry-content {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 45%;
+}
+
+.entry .entry-list-thumb {
+	margin-right: 24px;
+}
+
+.entry .entry-content {
+	text-align: justify;
+}
+
+.nothome .fa-apple:before {
+	color : #333;
+}
+
+.page-auteur, .auteur-rooms, .auteur-rooms img, .infos-au {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.infos-au {
+	width: 295px;
+	margin-left: 38px;
+	margin-bottom: 26px;
+}
+
+.infos-au p {
+	text-align: justify;
+	font-size: 14px;
+	margin-top: 15px;
+}
+
+.infos-au small {
+	color: #777;
+}
+
+.infos-au h4 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.auteur-rooms h3 {
+	margin-top: 0px;
+	margin-bottom: 28px;
+}
+
+.page-auteur {
+	width: 18%;
+}
+
+.auteur-rooms {
+	width: 550px;
+}
