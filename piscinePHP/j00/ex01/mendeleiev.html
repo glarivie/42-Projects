@@ -1,0 +1,951 @@
+<!--
+                                                          :::      ::::::::
+     mendeleiev.html                                    :+:      :+:    :+:
+                                                      +:+ +:+         +:+
+     By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+
+                                                  +#+#+#+#+#+   +#+
+     Created: 2015/09/22 13:56:44 by glarivie          #+#    #+#
+     Updated: 2015/09/22 15:57:55 by glarivie         ###   ########.fr
+-->
+
+<html>
+
+<head>
+	<title>Table de Mendeleïev</title>
+	<meta charset="utf-8">
+	<style>
+		body {
+			color: #000;
+			background-color: rgba(255, 255, 255, 0.5);
+			background-image: url("https://t2.ftcdn.net/jpg/00/26/31/01/500_F_26310171_TR2Jn8yKsZ3ckyFny5rkTzWl22RQ2wKM.jpg");
+			background-position: center center;
+			background-repeat: repeat;
+		}
+
+		h2 {
+			color: #000;
+			font-size: 3vw;
+			background-color: #FFF;
+			border: 1px solid #000;
+			font-family: sans-serif;
+		}
+
+		h1 {
+			color: #000;
+			font-size: 2.5vw;
+			margin: 0;
+			font-family: monospace;
+		}
+
+		h3 {
+			font-size: 1vw;
+			color: #bbb;
+		}
+
+		.heigth {
+			text-align: right;
+			font-size: 0.7vw;
+		}
+
+		.symbol {
+			text-align: left;
+			font-size: 1vw;
+		}
+
+		.atom {
+			text-align: center;
+			font-size: 1vw;
+		}
+
+		.cells {
+			font-family: sans-serif;
+			border: 1px solid #000;
+			width: 5%;
+		}
+
+		#space {
+			height: 20%;
+		}
+
+	</style>
+</head>
+
+<body>
+	<h2>
+		<center>Table de Mandeleiev</center>
+	</h2>
+	<center>
+		<table>
+			<caption></caption>
+			<thead>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="cells" table style="background:#FFF">
+						<div class="heigth">1.0079</div>
+						<center>
+							<h1>H</h1>
+						</center>
+						<div class="symbol">1</div>
+					</td>
+					<td colspan="16" class="empty"></td>
+					<td class="cells" table style="background:#EEE">
+						<div class="heigth">4003</div>
+						<center>
+							<h1>He</h1>
+						</center>
+						<div class="symbol">2</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="cells" table style="background:#DDD">
+						<div class="heigth">6.94</div>
+						<center>
+							<h1>Li</h1>
+						</center>
+						<div class="symbol">3</div>
+					</td>
+					<td class="cells" table style="background:#CCC">
+						<div class="heigth">9.012</div>
+						<center>
+							<h1>Be</h1>
+						</center>
+						<div class="symbol">1</div>
+					</td>
+					<td colspan="10" class="empty"></td>
+					<td class="cells" table style="background:#BBB">
+						<div class="heigth">10.81</div>
+						<center>
+							<h1>B</h1>
+						</center>
+						<div class="symbol">5</div>
+					</td>
+					<td class="cells" table style="background:#AAA">
+						<div class="heigth">12.01</div>
+						<center>
+							<h1>C</h1>
+						</center>
+						<div class="symbol">6</div>
+					</td>
+					<td class="cells" table style="background:#AAA">
+						<div class="heigth">14.01</div>
+						<center>
+							<h1>N</h1>
+						</center>
+						<div class="symbol">7</div>
+					</td>
+					<td class="cells" table style="background:#AAA">
+						<div class="heigth">16.00</div>
+						<center>
+							<h1>O</h1>
+						</center>
+						<div class="symbol">8</div>
+					</td>
+					<td class="cells" table style="background:#AAA">
+						<div class="heigth">19.00</div>
+						<center>
+							<h1>F</h1>
+						</center>
+						<div class="symbol">9</div>
+					</td>
+					<td class="cells" table style="background:#EEE">
+						<div class="heigth">20.18</div>
+						<center>
+							<h1>Ne</h1>
+						</center>
+						<div class="symbol">10</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="cells" table style="background:#DDD">
+						<div class="heigth">22.99</div>
+						<center>
+							<h1>Na</h1>
+						</center>
+						<div class="symbol">11</div>
+					</td>
+					<td class="cells" table style="background:#CCC">
+						<div class="heigth">24.31</div>
+						<center>
+							<h1>Mg</h1>
+						</center>
+						<div class="symbol">12</div>
+					</td>
+					<td colspan="10" class="empty"></td>
+					<td class="cells" table style="background:#999">
+						<div class="heigth">26.98</div>
+						<center>
+							<h1>Al</h1>
+						</center>
+						<div class="symbol">13</div>
+					</td>
+					<td class="cells" table style="background:#BBB">
+						<div class="heigth">28.09</div>
+						<center>
+							<h1>Si</h1>
+						</center>
+						<div class="symbol">14</div>
+					</td>
+					<td class="cells" table style="background:#AAA">
+						<div class="heigth">30.97</div>
+						<center>
+							<h1>P</h1>
+						</center>
+						<div class="symbol">15</div>
+					</td>
+					<td class="cells" table style="background:#AAA">
+						<div class="heigth">32.06</div>
+						<center>
+							<h1>S</h1>
+						</center>
+						<div class="symbol">16</div>
+					</td>
+					<td class="cells" table style="background:#AAA">
+						<div class="heigth">35.45</div>
+						<center>
+							<h1>Cl</h1>
+						</center>
+						<div class="symbol">17</div>
+					</td>
+					<td class="cells" table style="background:#EEE">
+						<div class="heigth">39.95</div>
+						<center>
+							<h1>Ar</h1>
+						</center>
+						<div class="symbol">18</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="cells" table style="background:#DDD">
+						<div class="heigth">39.10</div>
+						<center>
+							<h1>K</h1>
+						</center>
+						<div class="symbol">19</div>
+					</td>
+					<td class="cells" table style="background:#CCC">
+						<div class="heigth">40.08</div>
+						<center>
+							<h1>Ca</h1>
+						</center>
+						<div class="symbol">20</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">44.96</div>
+						<center>
+							<h1>Sc</h1>
+						</center>
+						<div class="symbol">21</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">47.87</div>
+						<center>
+							<h1>Ti</h1>
+						</center>
+						<div class="symbol">22</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">50.94</div>
+						<center>
+							<h1>V</h1>
+						</center>
+						<div class="symbol">23</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">52.00</div>
+						<center>
+							<h1>Cr</h1>
+						</center>
+						<div class="symbol">24</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">54.94</div>
+						<center>
+							<h1>Mn</h1>
+						</center>
+						<div class="symbol">25</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">55.85</div>
+						<center>
+							<h1>Fe</h1>
+						</center>
+						<div class="symbol">26</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">58.93</div>
+						<center>
+							<h1>Co</h1>
+						</center>
+						<div class="symbol">27</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">58.69</div>
+						<center>
+							<h1>Ni</h1>
+						</center>
+						<div class="symbol">28</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">63.55</div>
+						<center>
+							<h1>Cu</h1>
+						</center>
+						<div class="symbol">29</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">65.38</div>
+						<center>
+							<h1>Zn</h1>
+						</center>
+						<div class="symbol">30</div>
+					</td>
+					<td class="cells" table style="background:#999">
+						<div class="heigth">69.72</div>
+						<center>
+							<h1>Ga</h1>
+						</center>
+						<div class="symbol">31</div>
+					</td>
+					<td class="cells" table style="background:#BBB">
+						<div class="heigth">72.63</div>
+						<center>
+							<h1>Ge</h1>
+						</center>
+						<div class="symbol">32</div>
+					</td>
+					<td class="cells" table style="background:#BBB">
+						<div class="heigth">74.92</div>
+						<center>
+							<h1>As</h1>
+						</center>
+						<div class="symbol">33</div>
+					</td>
+					<td class="cells" table style="background:#AAA">
+						<div class="heigth">78.96</div>
+						<center>
+							<h1>Se</h1>
+						</center>
+						<div class="symbol">34</div>
+					</td>
+					<td class="cells" table style="background:#AAA">
+						<div class="heigth">79.90</div>
+						<center>
+							<h1>Br</h1>
+						</center>
+						<div class="symbol">35</div>
+					</td>
+					<td class="cells" table style="background:#EEE">
+						<div class="heigth">83.80</div>
+						<center>
+							<h1>Kr</h1>
+						</center>
+						<div class="symbol">36</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="cells" table style="background:#DDD">
+						<div class="heigth">85.47</div>
+						<center>
+							<h1>Rb</h1>
+						</center>
+						<div class="symbol">37</div>
+					</td>
+					<td class="cells" table style="background:#CCC">
+						<div class="heigth">87.62</div>
+						<center>
+							<h1>Sr</h1>
+						</center>
+						<div class="symbol">38</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">88.91</div>
+						<center>
+							<h1>Y</h1>
+						</center>
+						<div class="symbol">39</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">91.22</div>
+						<center>
+							<h1>Zr</h1>
+						</center>
+						<div class="symbol">40</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">92.91</div>
+						<center>
+							<h1>Nb</h1>
+						</center>
+						<div class="symbol">41</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">95.96</div>
+						<center>
+							<h1>Mo</h1>
+						</center>
+						<div class="symbol">42</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">[96]</div>
+						<center>
+							<h1>Tc</h1>
+						</center>
+						<div class="symbol">43</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">101.07</div>
+						<center>
+							<h1>Ru</h1>
+						</center>
+						<div class="symbol">44</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">102.91</div>
+						<center>
+							<h1>Rh</h1>
+						</center>
+						<div class="symbol">45</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">106.42</div>
+						<center>
+							<h1>Pd</h1>
+						</center>
+						<div class="symbol">46</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">107.87</div>
+						<center>
+							<h1>Ag</h1>
+						</center>
+						<div class="symbol">47</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">112.41</div>
+						<center>
+							<h1>Cd</h1>
+						</center>
+						<div class="symbol">48</div>
+					</td>
+					<td class="cells" table style="background:#999">
+						<div class="heigth">114.82</div>
+						<center>
+							<h1>In</h1>
+						</center>
+						<div class="symbol">49</div>
+					</td>
+					<td class="cells" table style="background:#999">
+						<div class="heigth">118.71</div>
+						<center>
+							<h1>Sn</h1>
+						</center>
+						<div class="symbol">50</div>
+					</td>
+					<td class="cells" table style="background:#BBB">
+						<div class="heigth">121.76</div>
+						<center>
+							<h1>Sb</h1>
+						</center>
+						<div class="symbol">51</div>
+					</td>
+					<td class="cells" table style="background:#BBB">
+						<div class="heigth">127.60</div>
+						<center>
+							<h1>Te</h1>
+						</center>
+						<div class="symbol">52</div>
+					</td>
+					<td class="cells" table style="background:#AAA">
+						<div class="heigth">128.90</div>
+						<center>
+							<h1>I</h1>
+						</center>
+						<div class="symbol">53</div>
+					</td>
+					<td class="cells" table style="background:#EEE">
+						<div class="heigth">131.29</div>
+						<center>
+							<h1>Xe</h1>
+						</center>
+						<div class="symbol">54</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="cells" table style="background:#DDD">
+						<div class="heigth">132.91</div>
+						<center>
+							<h1>Cs</h1>
+						</center>
+						<div class="symbol">55</div>
+					</td>
+					<td class="cells" table style="background:#CCC">
+						<div class="heigth">137.33</div>
+						<center>
+							<h1>Ba</h1>
+						</center>
+						<div class="symbol">56</div>
+					</td>
+					<td class="cells" table style="background:#333">
+						<center>
+							<h3>57 à 71</h3>
+						</center>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">178.49</div>
+						<center>
+							<h1>Hf</h1>
+						</center>
+						<div class="symbol">72</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">180.95</div>
+						<center>
+							<h1>Ta</h1>
+						</center>
+						<div class="symbol">73</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">183.64</div>
+						<center>
+							<h1>W</h1>
+						</center>
+						<div class="symbol">74</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">186.21</div>
+						<center>
+							<h1>Re</h1>
+						</center>
+						<div class="symbol">75</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">190.23</div>
+						<center>
+							<h1>Os</h1>
+						</center>
+						<div class="symbol">76</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">192.22</div>
+						<center>
+							<h1>Ir</h1>
+						</center>
+						<div class="symbol">77</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">195.08</div>
+						<center>
+							<h1>Pt</h1>
+						</center>
+						<div class="symbol">78</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">196.97</div>
+						<center>
+							<h1>Au</h1>
+						</center>
+						<div class="symbol">79</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">200.59</div>
+						<center>
+							<h1>Hg</h1>
+						</center>
+						<div class="symbol">80</div>
+					</td>
+					<td class="cells" table style="background:#999">
+						<div class="heigth">204.38</div>
+						<center>
+							<h1>Tl</h1>
+						</center>
+						<div class="symbol">81</div>
+					</td>
+					<td class="cells" table style="background:#999">
+						<div class="heigth">207.2</div>
+						<center>
+							<h1>Pb</h1>
+						</center>
+						<div class="symbol">82</div>
+					</td>
+					<td class="cells" table style="background:#999">
+						<div class="heigth">208.98</div>
+						<center>
+							<h1>Bi</h1>
+						</center>
+						<div class="symbol">83</div>
+					</td>
+					<td class="cells" table style="background:#BBB">
+						<div class="heigth">[209]</div>
+						<center>
+							<h1>Po</h1>
+						</center>
+						<div class="symbol">84</div>
+					</td>
+					<td class="cells" table style="background:#AAA">
+						<div class="heigth">[210]</div>
+						<center>
+							<h1>At</h1>
+						</center>
+						<div class="symbol">85</div>
+					</td>
+					<td class="cells" table style="background:#EEE">
+						<div class="heigth">[222]</div>
+						<center>
+							<h1>Rn</h1>
+						</center>
+						<div class="symbol">86</div>
+					</td>
+				</tr>
+				<tr table style="background:#888">
+					<td class="cells" table style="background:#DDD">
+						<div class="heigth">[223]</div>
+						<center>
+							<h1>Fr</h1>
+						</center>
+						<div class="symbol">87</div>
+					</td>
+					<td class="cells" table style="background:#CCC">
+						<div class="heigth">[226]</div>
+						<center>
+							<h1>Ra</h1>
+						</center>
+						<div class="symbol">88</div>
+					</td>
+					<td class="cells" table style="background:#333">
+						<center>
+							<h3>89 à 103</h3>
+						</center>
+					</td>
+					<td class="cells">
+						<div class="heigth">[267]</div>
+						<center>
+							<h1>Rf</h1>
+						</center>
+						<div class="symbol">104</div>
+					</td>
+					<td class="cells">
+						<div class="heigth">[268]</div>
+						<center>
+							<h1>Db</h1>
+						</center>
+						<div class="symbol">105</div>
+					</td>
+					<td class="cells">
+						<div class="heigth">[271]</div>
+						<center>
+							<h1>Sg</h1>
+						</center>
+						<div class="symbol">106</div>
+					</td>
+					<td class="cells">
+						<div class="heigth">[272]</div>
+						<center>
+							<h1>Bh</h1>
+						</center>
+						<div class="symbol">107</div>
+					</td>
+					<td class="cells">
+						<div class="heigth">[277]</div>
+						<center>
+							<h1>Hs</h1>
+						</center>
+						<div class="symbol">108</div>
+					</td>
+					<td class="cells">
+						<div class="heigth">[276]</div>
+						<center>
+							<h1>Mt</h1>
+						</center>
+						<div class="symbol">109</div>
+					</td>
+					<td class="cells">
+						<div class="heigth">[281]</div>
+						<center>
+							<h1>Ds</h1>
+						</center>
+						<div class="symbol">110</div>
+					</td>
+					<td class="cells">
+						<div class="heigth">[280]</div>
+						<center>
+							<h1>Rg</h1>
+						</center>
+						<div class="symbol">333</div>
+					</td>
+					<td class="cells">
+						<div class="heigth">[285]</div>
+						<center>
+							<h1>Cn</h1>
+						</center>
+						<div class="symbol">112</div>
+					</td>
+					<td class="cells" table style="background:#999">
+						<div class="heigth">[284]</div>
+						<center>
+							<h1>Uut</h1>
+						</center>
+						<div class="symbol">113</div>
+					</td>
+					<td class="cells" table style="background:#999">
+						<div class="heigth">[289]</div>
+						<center>
+							<h1>Fl</h1>
+						</center>
+						<div class="symbol">114</div>
+					</td>
+					<td class="cells" table style="background:#999">
+						<div class="heigth">[298]</div>
+						<center>
+							<h1>Uup</h1>
+						</center>
+						<div class="symbol">115</div>
+					</td>
+					<td class="cells" table style="background:#999">
+						<div class="heigth">[293]</div>
+						<center>
+							<h1>Lv</h1>
+						</center>
+						<div class="symbol">116</div>
+					</td>
+					<td class="cells" table style="background:#999">
+						<div class="heigth">[294]</div>
+						<center>
+							<h1>Uus</h1>
+						</center>
+						<div class="symbol">117</div>
+					</td>
+					<td class="cells" table style="background:#EEE">
+						<div class="heigth">[294]</div>
+						<center>
+							<h1>Uuo</h1>
+						</center>
+						<div class="symbol">118</div>
+					</td>
+				</tr>
+				<tr id="space">
+
+				</tr>
+				</tr>
+				<tr>
+					<td colspan="2" class="empty"></td>
+					<td class="cells" table style="background:#666">
+						<div class="heigth">138.91</div>
+						<center>
+							<h1>La</h1>
+						</center>
+						<div class="symbol">57</div>
+					</td>
+					<td class="cells" table style="background:#666">
+						<div class="heigth">140.12</div>
+						<center>
+							<h1>Ce</h1>
+						</center>
+						<div class="symbol">58</div>
+					</td>
+					<td class="cells" table style="background:#666">
+						<div class="heigth">140.91</div>
+						<center>
+							<h1>Pr</h1>
+						</center>
+						<div class="symbol">59</div>
+					</td>
+					<td class="cells" table style="background:#666">
+						<div class="heigth">144.24</div>
+						<center>
+							<h1>Nd</h1>
+						</center>
+						<div class="symbol">60</div>
+					</td>
+					<td class="cells" table style="background:#666">
+						<div class="heigth">[145]</div>
+						<center>
+							<h1>Pm</h1>
+						</center>
+						<div class="symbol">61</div>
+					</td>
+					<td class="cells" table style="background:#666">
+						<div class="heigth">150.36</div>
+						<center>
+							<h1>Sm</h1>
+						</center>
+						<div class="symbol">62</div>
+					</td>
+					<td class="cells" table style="background:#666">
+						<div class="heigth">151.96</div>
+						<center>
+							<h1>Eu</h1>
+						</center>
+						<div class="symbol">63</div>
+					</td>
+					<td class="cells" table style="background:#666">
+						<div class="heigth">157.25</div>
+						<center>
+							<h1>Gd</h1>
+						</center>
+						<div class="symbol">64</div>
+					</td>
+					<td class="cells" table style="background:#666">
+						<div class="heigth">158.93</div>
+						<center>
+							<h1>Tb</h1>
+						</center>
+						<div class="symbol">65</div>
+					</td>
+					<td class="cells" table style="background:#666">
+						<div class="heigth">162.50</div>
+						<center>
+							<h1>Dy</h1>
+						</center>
+						<div class="symbol">66</div>
+					</td>
+					<td class="cells" table style="background:#666">
+						<div class="heigth">164.93</div>
+						<center>
+							<h1>Ho</h1>
+						</center>
+						<div class="symbol">67</div>
+					</td>
+					<td class="cells" table style="background:#666">
+						<div class="heigth">167.26</div>
+						<center>
+							<h1>Er</h1>
+						</center>
+						<div class="symbol">68</div>
+					</td>
+					<td class="cells" table style="background:#666">
+						<div class="heigth">168.93</div>
+						<center>
+							<h1>Tm</h1>
+						</center>
+						<div class="symbol">69</div>
+					</td>
+					<td class="cells" table style="background:#666">
+						<div class="heigth">173.05</div>
+						<center>
+							<h1>Yb</h1>
+						</center>
+						<div class="symbol">70</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">174.97</div>
+						<center>
+							<h1>Lu</h1>
+						</center>
+						<div class="symbol">71</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="empty"></td>
+					<td class="cells" table style="background:#555">
+						<div class="heigth">[227]</div>
+						<center>
+							<h1>Ac</h1>
+						</center>
+						<div class="symbol">89</div>
+					</td>
+					<td class="cells" table style="background:#555">
+						<div class="heigth">232.04</div>
+						<center>
+							<h1>Th</h1>
+						</center>
+						<div class="symbol">90</div>
+					</td>
+					<td class="cells" table style="background:#555">
+						<div class="heigth">231.04</div>
+						<center>
+							<h1>Pa</h1>
+						</center>
+						<div class="symbol">91</div>
+					</td>
+					<td class="cells" table style="background:#555">
+						<div class="heigth">238.03</div>
+						<center>
+							<h1>U</h1>
+						</center>
+						<div class="symbol">92</div>
+					</td>
+					<td class="cells" table style="background:#555">
+						<div class="heigth">[237]</div>
+						<center>
+							<h1>Np</h1>
+						</center>
+						<div class="symbol">93</div>
+					</td>
+					<td class="cells" table style="background:#555">
+						<div class="heigth">[244]</div>
+						<center>
+							<h1>Pu</h1>
+						</center>
+						<div class="symbol">94</div>
+					</td>
+					<td class="cells" table style="background:#555">
+						<div class="heigth">[243]</div>
+						<center>
+							<h1>Am</h1>
+						</center>
+						<div class="symbol">95</div>
+					</td>
+					<td class="cells" table style="background:#555">
+						<div class="heigth">[247]</div>
+						<center>
+							<h1>Cm</h1>
+						</center>
+						<div class="symbol">96</div>
+					</td>
+					<td class="cells" table style="background:#555">
+						<div class="heigth">[247]</div>
+						<center>
+							<h1>Bk</h1>
+						</center>
+						<div class="symbol">97</div>
+					</td>
+					<td class="cells" table style="background:#555">
+						<div class="heigth">[251]</div>
+						<center>
+							<h1>Cf</h1>
+						</center>
+						<div class="symbol">98</div>
+					</td>
+					<td class="cells" table style="background:#555">
+						<div class="heigth">[252]</div>
+						<center>
+							<h1>Es</h1>
+						</center>
+						<div class="symbol">99</div>
+					</td>
+					<td class="cells" table style="background:#555">
+						<div class="heigth">[257]</div>
+						<center>
+							<h1>Fm</h1>
+						</center>
+						<div class="symbol">100</div>
+					</td>
+					<td class="cells" table style="background:#555">
+						<div class="heigth">[258]</div>
+						<center>
+							<h1>Md</h1>
+						</center>
+						<div class="symbol">101</div>
+					</td>
+					<td class="cells" table style="background:#555">
+						<div class="heigth">[259]</div>
+						<center>
+							<h1>No</h1>
+						</center>
+						<div class="symbol">102</div>
+					</td>
+					<td class="cells" table style="background:#888">
+						<div class="heigth">[262]</div>
+						<center>
+							<h1>Lr</h1>
+						</center>
+						<div class="symbol">103</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+</body>
+
+</HTML>

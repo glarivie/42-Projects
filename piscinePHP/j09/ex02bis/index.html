@@ -1,0 +1,118 @@
+<!--
+                                                          :::      ::::::::
+     index.html                                         :+:      :+:    :+:
+                                                      +:+ +:+         +:+
+     By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+
+                                                  +#+#+#+#+#+   +#+
+     Created: 2016/04/14 09:50:29 by glarivie          #+#    #+#
+     Updated: 2016/04/14 09:50:32 by glarivie         ###   ########.fr
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>TODO List</title>
+	</head>
+	<style media="screen">
+		.container {
+			font-family: sans-serif;
+			font-size: 15px;
+			width: 320px;
+			margin-top: 48px;
+			margin-left: auto;
+			margin-right: auto;
+			border: 1px solid #DDD;
+			box-shadow: 0px 0px 12px #EEE;
+			padding: 10px;
+		}
+
+		button {
+			border: none;
+			background-color: #333;
+			color: #EEE;
+			box-shadow: 0px 0px 4px #EEE;
+			width: 100%;
+			text-align: center;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			font-size: 15px;
+		}
+
+		h1 {
+			color: #333;
+			font-size: 24px;
+			text-align: center;
+			margin-left: -10px;
+		}
+
+		button:focus, button:hover {
+			background-color: #555;
+			color: #FFF;
+			cursor: pointer;
+		}
+
+		small {
+			font-size: small;
+			color: #CCC;
+			text-align: center;
+			margin-top: 18px;
+			width: 100%;
+			display: block;
+		}
+
+		#todos li {
+			position: relative;
+			list-style: none;
+			margin-bottom: 5px;
+			border: 1px solid #EEE;
+			padding: 5px 30px 5px 30px;
+			box-shadow: 0px 0px 4px #EEE;
+			color: #333;
+		}
+
+		#todos li .before {
+			content: '☰';
+			position: absolute;
+			left: 9px;
+			top: 2px;
+			color: #CCC;
+		}
+
+		#todos li .after {
+			content: '✖';
+			position: absolute;
+			right: 9px;
+			top: 4px;
+			color: #CCC;
+		}
+
+		#todos li .before:hover, #todos li .after:hover {
+			color: #333;
+			cursor: pointer;
+		}
+
+		#todos li p {
+			margin: 0;
+		}
+
+		#todos {
+			padding-left: 0;
+		}
+
+	</style>
+	<body>
+		<div class="container">
+			<h1>&#10000; TODO List</h1>
+			<div id="ft_list">
+				<ul id="todos">
+
+				</ul>
+			</div>
+			<button id="new" type="button" name="button">New</button>
+			<small>&copy; TODO List - <em>glarivie@student.42.fr</em></small>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script type="text/javascript" src="todo.js"></script>
+	</body>
+</html>

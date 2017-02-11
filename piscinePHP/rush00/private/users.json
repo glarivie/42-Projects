@@ -1,0 +1,13 @@
+{
+	"users" : [
+		{
+			"login": "root",
+			"password": "06948d93cd1e0855ea37e75ad516a250d2d0772890b073808d831c438509190162c0d890b17001361820cffc30d50f010c387e9df943065aa8f4e92e63ff060c",
+			"is_admin": true
+		}, {
+			"login": "test",
+			"password": "b913d5bbb8e461c2c5961cbe0edcdadfd29f068225ceb37da6defcf89849368f8c6c2eb6a4c4ac75775d032a0ecfdfe8550573062b653fe92fc7b8fb3b7be8d6",
+			"is_admin": false
+		}
+	]
+}

@@ -1,0 +1,117 @@
+{
+	"products" : [
+		{
+			"id": "werwwerwdsa33434",
+			"name": "Robe jacquard",
+			"brand": "MADEMOISELLE R",
+			"price": 109.99,
+			"imgURL": "http://media.laredoute.com/products2/641by641/1/e/e/500899815_1000_CO_2_1200.jpg",
+			"categories": [
+				"femme",
+				"robe"
+			]
+		}, {
+			"id": "3343467rsgdff",
+			"name": "Robe jacquard",
+			"brand": "MADEMOISELLE R",
+			"price": 109.99,
+			"imgURL": "http://media.laredoute.com/products2/641by641/c/d/a/350026046_1_CO_2_5071611.jpg",
+			"categories": [
+				"femme",
+				"robe"
+			]
+		}, {
+			"id": "11176jjuk",
+			"name": "LES PETITS PRIX",
+			"brand": "Robe courte imprimée",
+			"price": 109.99,
+			"imgURL": "http://media.laredoute.com/products2/641by641/7/7/7/350027151_1_CO_2_4738327.jpg",
+			"categories": [
+				"femme",
+				"robe"
+			]
+		}, {
+			"id": "12edghyhbfj9900",
+			"name": "MADEMOISELLE R",
+			"brand": "Veste courte",
+			"price": 109.99,
+			"imgURL": "http://media.laredoute.com/products2/641by641/7/0/9/350026161_1_CO_2_4700929.jpg",
+			"categories": [
+				"femme",
+				"veste"
+			]
+		}, {
+			"id": "868686858848383fff",
+			"name": "LES PETITS PRIX",
+			"brand": "Cardigan manches 3/4",
+			"price": 109.99,
+			"imgURL": "http://media.laredoute.com/products2/641by641/4/6/f/350011808_1_CO_1_4782038.jpg",
+			"categories": [
+				"femme",
+				"cardigan"
+			]
+		}, {
+			"id": "sdfsdf56565565fddf",
+			"name": "R essentiel",
+			"brand": "Combinaison denim",
+			"price": 109.99,
+			"imgURL": "http://media.laredoute.com/products2/641by641/8/8/7/500912010_1000_CO_2_1200.jpg",
+			"categories": [
+				"femme",
+				"combinaison"
+			]
+		}, {
+			"id": "78ghjksdfgmkdsf",
+			"name": "R essentiel",
+			"brand": "Veste en lin coupe droite",
+			"price": 109.99,
+			"imgURL": "http://media.laredoute.com/products2/641by641/e/7/b/500807223_1000_CO_2_1200.jpg",
+			"categories": [
+				"homme",
+				"veste"
+			]
+		}, {
+			"id": "dsqaqzqz3444",
+			"name": "R essentiel",
+			"brand": "Veste denim",
+			"price": 109.99,
+			"imgURL": "http://media.laredoute.com/products2/641by641/c/a/b/500808216_1000_CO_1_1200.jpg",
+			"categories": [
+				"homme",
+				"veste"
+			]
+		}, {
+			"id": "11223456787654",
+			"name": "SOFT GREY",
+			"brand": "Veste",
+			"price": 109.99,
+			"imgURL": "http://media.laredoute.com/products2/641by641/4/1/0/500809079_1000_CO_2_1200.jpg",
+			"categories": [
+				"homme",
+				"veste"
+			]
+		}, {
+			"id": "fdgdfhfhfgh55fdg5d",
+			"name": "SOFT GREY",
+			"brand": "Jean coupe straight",
+			"price": 109.99,
+			"imgURL": "http://media.laredoute.com/products2/641by641/b/0/d/500807812_1000_CO_1_1200.jpg",
+			"categories": [
+				"homme",
+				"jeans",
+				"pantalons"
+			]
+		}, {
+			"id": "a87as5dvr55dfgd",
+			"name": "Les petits prix",
+			"brand": "Pantalon chino coupe straight",
+			"price": 109.99,
+			"imgURL": "http://media.laredoute.com/products2/641by641/7/9/a/500797251_1003_CO_1_1200.jpg",
+			"categories": [
+				"homme",
+				"chino",
+				"pantalons"
+			]
+		}
+	]
+}

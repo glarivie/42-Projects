@@ -1,0 +1,165 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   doft.css                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/09/22 14:32:47 by glarivie          #+#    #+#             */
+/*   Updated: 2015/09/22 14:48:17 by glarivie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+body {
+    background-color: #505050;
+}
+
+.top-box {
+    width: 1423px;
+    height: 138px;
+    background-color: #909090;
+    border-radius: 10px 10px 10px 10px;
+    margin: 15px auto;
+    box-shadow: 5px 5px 5px 5px #212121;
+    clear: both;
+}
+
+.countainer-box {
+    width: 1366;
+    height: 582;
+    margin: 20px auto;
+    clear: both;
+}
+
+.left-box {
+    float: left;
+    width: 142px;
+    height: 425px;
+    background-color: #909090;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 5px 5px #212121;
+    clear: both;
+}
+
+.right-box {
+    float: left;
+    width: 142px;
+    height: 425px;
+    background-color: #909090;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 5px 5px #212121;
+}
+
+.middle-box {
+    float: left;
+    width: 1022px;
+    height: 583px;
+    background-color: #909090;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 5px 5px #212121;
+    margin: 0px 30px;
+}
+
+.day-of-42 {
+    float: left;
+    width: 435px;
+    height: 122px;
+    margin: 10px;
+}
+
+.img-reload {
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+.img-close {
+    clear: right;
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 70px;
+}
+
+.img-loupe {
+    float: right;
+    width: 238px;
+    height: 136px;
+    margin-top: -20px;
+    margin-right: 10px;
+}
+
+.img-left-box {
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+.selected {
+    border: 5px solid red;
+}
+
+.img-cluster {
+    width: 1000px;
+    height 562px;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+.img-book {
+    float: left;
+    width: 65px;
+    height: 85px;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+.img-towel {
+    float: left;
+    width: 50px;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.img-brick {
+    width: 119px;
+    height: 31px;
+    repeat: y;
+}
+
+.brick-repeat {
+    float: left;
+    width: 120px;
+    height: 70px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-image: url("./resources/brick.jpg");
+}
+
+.chat-box {
+    float: left;
+    width: 520px;
+    height: 163px;
+    background-color: #88FF89;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 5px 5px #212121;
+    margin-left: 10%;
+    margin-top: -100px;
+}
+
+p {
+    margin: 10px;
+}
+
+.ordi {
+    text-shadow: 5px 5px 3px #BA8047;
+}
+
+.little-height {
+    line-height: 4px;
+}

@@ -1,0 +1,226 @@
+<!--
+                                                          :::      ::::::::
+     calc.html                                          :+:      :+:    :+:
+                                                      +:+ +:+         +:+
+     By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+
+                                                  +#+#+#+#+#+   +#+
+     Created: 2016/04/14 09:49:45 by glarivie          #+#    #+#
+     Updated: 2016/04/14 09:49:50 by glarivie         ###   ########.fr
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Calculatrice jQuery</title>
+		<link rel="icon"  type="image/png" href="http://www.freeiconsweb.net/photo/Design-Icon/Calc_[freeiconsweb.net]_21969.png">
+	</head>
+	<style media="screen">
+		body {
+			background-color: #333;
+			font-size: 18px;
+		}
+
+		#calculatrice {
+			width: 265px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 48px;
+			background-color: #EEE;
+			padding-left: 5px;
+			padding-bottom: 5px;
+			padding-top: 5px;
+			box-shadow: 0px 0px 32px #000;
+			border-radius: 4px;
+		}
+
+		.line {
+			width: 100%;
+		}
+
+		.line button {
+			display: inline-block;
+			vertical-align: top;
+			background-color: #333;
+			color: #EEE;
+			font-family: sans-serif;
+			padding: 8px;
+			border: none;
+			border-radius: 4px;
+		}
+
+		.line button:hover, .line button:focus {
+			cursor: pointer;
+			background-color: #666;
+			color: #FFF;
+		}
+
+		#result {
+			font-family: monospace;
+			background-color: #CCC;
+			color: #444;
+			height: 38px;
+			text-align: right;
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-top: 17px;
+			margin-left: 5px;
+			margin-right: 10px;
+			margin-top: -15px;
+			margin-bottom: 15px;
+			border-radius: 4px;
+		}
+
+		#warning {
+			color: #AAA;
+			position: relative;
+			left: 20px;
+			bottom: -25px;
+		}
+
+		#warning:hover, #warning:focus {
+			color: #444;
+			cursor: pointer;
+		}
+
+		.head button, .first button, .second button, .third button, .last button[name="zero"], .last button[name="dot"] {
+			width: 55px;
+			margin-left: 5px;
+			margin-bottom: 5px;
+			height: 55px;
+			text-align: center;
+		}
+
+		.last button[name="enter"] {
+			width: 120px;
+			margin-left: 5px;
+			margin-bottom: 5px;
+			height: 55px;
+			text-align: center;
+		}
+
+		small {
+			display: block;
+			margin-top: 18px;
+			text-align: center;
+			font-size: small;
+			color: #777;
+			margin-right: auto;
+			margin-left: auto;
+			width: 260px;
+		}
+
+	</style>
+	<body>
+		<div id="calculatrice">
+			<span id="warning">&#9888;</span>
+			<p id="result"></p>
+			<div class="line head">
+				<button class="special clear" id="clear" type="button" name="clear">clear</button>
+				<button class="special egal" id="equal" type="button" name="equal">=</button>
+				<button class="operator" id="divide" type="button" name="divide">/</button>
+				<button class="operator" id="modulo" type="button" name="modulo">%</button>
+			</div>
+			<div class="line first">
+				<button class="number" id="seven" type="button" name="seven">7</button>
+				<button class="number" id="height" type="button" name="height">8</button>
+				<button class="number" id="nine" type="button" name="nine">9</button>
+				<button class="operator" id="mult" type="button" name="mult">*</button>
+			</div>
+			<div class="line second">
+				<button class="number" id="four" type="button" name="four">4</button>
+				<button class="number" id="five" type="button" name="five">5</button>
+				<button class="number" id="six" type="button" name="six">6</button>
+				<button class="operator" id="minus" type="button" name="minus">-</button>
+			</div>
+			<div class="line third">
+				<button class="number" id="one" type="button" name="one">1</button>
+				<button class="number" id="two" type="button" name="two">2</button>
+				<button class="number" id="three" type="button" name="three">3</button>
+				<button class="operator" id="plus" type="button" name="plus">+</button>
+			</div>
+			<div class="line last">
+				<button class="number" id="zero" type="button" name="zero">0</button>
+				<button class="dot" id="dot" type="button" name="dot">.</button>
+				<button class="special enter" id="enter" type="submit" name="enter">try me &#8626;</button>
+			</div>
+		</div>
+		<small>&copy; Calculatrice JS - <em>glarivie@student.42.fr</em></small>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			var result = $('#result'),
+				calculatrice = $('#calculatrice'),
+				pressEqual = false;
+
+			var calc = {
+				equal : $('#equal'),
+				divide : $('#divide'),
+				modulo: $('#modulo'),
+				seven: $('#seven'),
+				height : $('#height'),
+				nine : $('#nine'),
+				mult : $('#mult'),
+				four: $('#four'),
+				five : $('#five'),
+				six : $('#six'),
+				minus : $('#minus'),
+				one : $('#one'),
+				two : $('#two'),
+				three : $('#three'),
+				plus : $('#plus'),
+				zero : $('#zero'),
+				dot : $('#dot'),
+				enter : $('#enter'),
+				clear : $('#clear'),
+				warning : $('#warning')
+			};
+
+			setInterval(function() {
+				alert('Please, use me...');
+			}, 30000);
+
+			$.each(calc, function(button) {
+				$(this).on('click', function() {
+					var expr = result.html(),
+						lastChar = parseInt(expr.slice(-1));
+					if (expr.length < 18) {
+						if ($(this).html() === 'clear')
+							result.html('');
+						if ($(this).hasClass('number')) {
+							if (pressEqual) {
+								calc['warning'].css('color', '#AAA');
+								result.html($(this).html());
+								pressEqual = false;
+							} else
+								result.html(result.html() + $(this).html());
+						}
+						if ($(this).hasClass('operator') || $(this).hasClass('dot')) {
+							if (expr.length > 0 && !isNaN(lastChar) && !pressEqual) {
+								calc['warning'].css('color', '#AAA');
+								result.html(result.html() + $(this).html());
+							}
+						}
+						if ($(this).hasClass('enter') || $(this).hasClass('equal')) {
+							if (expr.length > 0 && !isNaN(lastChar) && !pressEqual) {
+								calc['warning'].css('color', '#AAA');
+								var finalResult = parseInt(eval(expr));
+								if (isNaN(finalResult))
+									result.html('It’s over 9000!');
+								else
+									result.html(finalResult);
+								calc['warning'].css('color', 'red');
+								console.log(result.html());
+								pressEqual = true;
+							}
+						}
+						if ($(this).is('#warning') && pressEqual)
+							alert(result.html());
+					} else {
+						result.html('Error :(');
+						pressEqual = true;
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

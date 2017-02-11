@@ -1,0 +1,19 @@
+<- Vertex ----------------------------------------------------------------------
+The Vertex class return a point define by his coordinates in the plan.
+The coordinates are made with 5 constants x, y, z, w and color.
+
+An instance can be constructed from coordinates values:
+new Vertex([
+	'x' => 0.0,			// required
+	'y' => 0.0,			// required
+	'z' => 0.0,			// required
+	'w' => 1.0,			// optional (default is 1.0)
+	'color' => new Color([
+		'rgb' => 0x000000	// see Color::doc() for more informations
+	])				// optional (default color is black)
+]);
+
+The Class Color is required to work with the Class Vertex.
+
+The class does not provides any public methods.
+---------------------------------------------------------------------- Vertex ->

@@ -1,0 +1,35 @@
+<- Matrix ----------------------------------------------------------------------
+With the Matrix Class we can now apply transformations to our Vector.
+
+An instance can be constructed from a definition of the transformation that we
+want to apply to our vector(s) and the vector himself:
+new Matrix([
+	'preset'	=>	Matrix::TRANSLATION,
+	'scale'		=>	$scale	// Required for the SCALE transformation
+	'vtc'		=>	$vtc	// Required for the TRANSLATION transformation
+	'angle'		=>	$angle	// Required for RX, RY and RZ transformations
+	'fov'		=>	$fov	// Required for the PROJECTION transformation
+	'ratio'		=>	$ratio	// Also required for the PROJECTION transformation
+	'near'		=>	$near	// Also required for the PROJECTION transformation
+	'far'		=>	$far	// Also required for the PROJECTION transformation
+]);
+
+The first parameter 'preset' is the transformation name.
+Here is the list of all available transformations :
+
+	- Matrix::IDENTITY
+	- Matrix::SCALE
+	- Matrix::RX			// Rotate the vector from the axis x
+	- Matrix::RY			// Rotate the vector from the axis y
+	- Matrix::RZ			// Rotate the vector from the axis z
+	- Matrix::TRANSLATION
+	- Matrix::PROJECTION
+
+The class provides the following methods :
+
+Matrix	mult();
+Return a new matrix which is the result of the product between two matrix.
+
+Vertex	transformVertex($vtx);
+Return a new vertex from a matrix transformation.
+---------------------------------------------------------------------- Matrix ->

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Veuillez souffler dans le ballon</title>
+	</head>
+	<style media="screen">
+		#balloon {
+			width: 200px;
+			height: 200px;
+			border-radius: 100px;
+			background-color: red;
+			margin-top: 250px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+	<body>
+
+		<div id="balloon"></div>
+
+		<script type="text/javascript">
+			var balloon = document.getElementById('balloon'),
+				balloonWidth = 200,
+				balloonHeight = 200,
+				ballonMarginTop = 250,
+				ballonColor = 'red',
+				unit = 'px';
+
+			var toogleColor = function(currentColor) {
+				if (currentColor === 'red')
+					return 'green';
+				if (currentColor === 'green')
+					return 'blue';
+				if (currentColor === 'blue')
+					return 'red';
+			}
+
+			var toogleColorInvert = function(currentColor) {
+				if (currentColor === 'blue')
+					return 'green';
+				if (currentColor === 'green')
+					return 'red';
+				if (currentColor === 'red')
+					return 'blue';
+			}
+
+			balloon.addEventListener('click', function(e) {
+				balloonHeight = balloonHeight > 420 ? 200 : balloonHeight + 10;
+				balloonWidth = balloonWidth > 420 ? 200 : balloonWidth + 10;
+				ballonColor = toogleColor(ballonColor);
+				ballonMarginTop = balloonWidth === 200 ? 250 : ballonMarginTop - 5;
+				e.target.style.width = balloonWidth + unit;
+				e.target.style.height = balloonHeight + unit;
+				e.target.style.marginTop = ballonMarginTop + unit;
+				e.target.style.borderRadius = (balloonWidth / 2) + unit;
+				e.target.style.backgroundColor = ballonColor;
+			}, false);
+
+			balloon.addEventListener('mouseout', function(e) {
+				balloonHeight = balloonHeight <= 200 ? 200 : balloonHeight - 5;
+				balloonWidth = balloonWidth <= 200 ? 200 : balloonWidth - 5;
+				ballonMarginTop = balloonWidth === 200 ? 250 : ballonMarginTop + 2.5;
+				ballonColor = toogleColorInvert(ballonColor);
+				e.target.style.width = balloonWidth + unit;
+				e.target.style.height = balloonHeight + unit;
+				e.target.style.marginTop = ballonMarginTop + unit;
+				e.target.style.borderRadius = (balloonWidth / 2) + unit;
+				e.target.style.backgroundColor = ballonColor;
+			}, false);
+
+		</script>
+	</body>
+</html>

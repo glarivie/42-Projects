@@ -1,0 +1,79 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   menu.css                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/09/22 15:30:15 by glarivie          #+#    #+#             */
+/*   Updated: 2015/09/22 15:36:55 by glarivie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+body {
+	background-color: #333;
+	font-family: sans-serif;
+}
+
+#menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu > li, #menu > li li {
+    position: relative;
+    display: inline-block;
+    width: 115px;
+    padding: 6px 15px;
+    background-color: #777;
+}
+
+#menu > li li {
+    background: transparent none;
+}
+
+#menu > li li a {
+    color: #444;
+}
+
+#menu > li li:hover {
+    background: #eee;
+	color: pink;
+}
+
+#menu > li:first-child {
+    border-right: 1px solid #777;
+}
+
+#menu > li + li {
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #777;
+}
+
+#menu > li:last-child {
+    border-right: 0;
+    border-left: 1px solid #aaa;
+}
+
+#menu > li:hover {
+    background-color: #999;
+	color: pink;
+}
+
+#menu ul {
+    position: absolute;
+    top: 2em;
+    left: 0;
+    max-height: 0em;
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+    overflow: hidden;
+    transition: 1s max-height 0.3s;
+}
+
+#menu > li:hover ul {
+    max-height: 13em;
+	color: pink;
+}

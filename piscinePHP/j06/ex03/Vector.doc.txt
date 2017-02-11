@@ -1,0 +1,43 @@
+<- Vector ----------------------------------------------------------------------
+The Vector class allow you to place vertex (using required Vertex Class).
+
+An instance can be constructed from distinct orig and dest values:
+new Vector([
+	'orig' => $vtxO,
+	'dest' => $vtxX
+]);
+
+The constant 'orig' define the origin of the vector in the plane.
+The constant 'dest' containt the coordinate to target the end of the vector.
+Each values are required to use the Class Vector and depend of the Vertex Class.
+
+The class provides the following methods :
+
+Vector	magnitude();
+Return the vector length.
+
+Vector	normalize();
+Return a normalized version of the vector. If the vector already exists, return
+a new copy of the vector.
+
+Vector	add($rhs);
+Return a new vector from the sum of two vectors.
+
+Vector	sub($rhs);
+Return the difference between two vectors.
+
+Vector	opposite();
+Return the opposite vector of the current one.
+
+Vector	scalarProduct($k);
+Return the multiplication of a vector and a scalar product.
+
+Vector	dotProduct($rhs);
+Return the scalar product between two vectors.
+
+Vector	cos($rhs);
+Return the cos angle between two vectors.
+
+Vector crossProduct($rhs);
+Return the cross product between two vectors.
+---------------------------------------------------------------------- Vector ->

@@ -1,0 +1,231 @@
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	color: #555;
+}
+
+a:hover, a:focus {
+	color: #D24207;
+}
+
+small {
+	font-size: small;
+	color: grey;
+}
+
+em {
+	font-style: italic;
+	color: #333;
+}
+
+footer {
+	text-align: center;
+	margin-top: 15%;
+}
+
+nav {
+	text-align: center;
+}
+
+nav .menu > li {
+	font-family: sans-serif;
+	list-style: none;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 8px;
+	margin-left: 8px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+nav .menu > li:hover, nav .menu > li:focus {
+	border-bottom: 1px #EEE solid;
+}
+
+nav .menu > li > a {
+	text-decoration: none;
+}
+
+form {
+	max-width: 250px;
+	border: 1px solid #EEE;;
+	padding: 15px;
+	margin-top: 4%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+form label, form input, form button {
+	width: 100%;
+}
+
+form button {
+	margin-top: 10px;
+}
+
+form input {
+	margin-bottom: 10px;
+	font-size: 1em;
+	padding: 1px;
+	margin-top: 4px;
+}
+
+form button {
+	width: 256px;
+	height: 29px;
+	background-color: #333;
+	color: #FFF;
+	border-radius: none;
+	border: 1px #EEE solid;
+	font-size: 1em;
+}
+
+form button:hover, form button:focus {
+	cursor: pointer;
+	background-color: #555;
+}
+
+.product {
+	max-width: 29.5%;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid #EEE;
+	box-shadow: 0px 0px 8px #EEE;
+	padding: 8px;
+	margin-right: 1%;
+	margin-left: 1%;
+	position: relative;
+}
+
+.product li {
+	list-style: none;
+}
+
+.product img {
+	max-width: 49%;
+	float: left;
+	margin-right: 8px;
+}
+
+.categories {
+	border-top: 1px solid #EEE;
+	border-bottom: 1px solid #EEE;
+	box-shadow: 0px 0px 3px #EEE;
+	padding: 8px;
+	text-align: center;
+}
+
+.categories li {
+	list-style: none;
+	vertical-align: top;
+	display: inline-block;
+	margin-left: 1%;
+	margin-right: 1%;
+	line-height: 1.5em;
+	font-size: 0.95em;
+}
+
+.categories li > a {
+	text-decoration: none;
+}
+
+.product a[type="button"] {
+	text-decoration: none;
+	color: #FFF;
+	font-size: 0.95em;
+
+}
+
+.product .button-panier:hover, .product .button-panier:focus {
+	background-color: #555;
+}
+
+.product .button-panier {
+	margin-top: 15px;
+	width: 41%;
+	float: right;
+	background-color: #333;
+	padding: 5px 10px 5px 10px;
+	text-align: center;
+	position: absolute;
+	bottom: 8px;
+	right: 8px;
+}
+
+.cat-list {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.cat-price {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.cat-name, .cat-brand {
+	font-size: 0.95em;
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+.cat-name {
+	color: #555;
+}
+
+.create, .connect {
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.create h2, .connect h2 {
+	text-align: center;
+}
+
+.active {
+	border-bottom: 1px #CCC solid;
+}
+
+.admin-product {
+	border-bottom: 1px #EEE solid;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	width: 90%;
+	margin-left: 2%;
+	margin-top: 0 !important;
+}
+
+.admin-product:hover, .admin-product:focus {
+	background-color: #EFEFEF;
+}
+
+.admin-product li {
+	display: inline-block;
+	vertical-align: top;
+	list-style: none;
+	margin-right: 20px;
+}
+
+.admin-product li span {
+	color: #D24207;
+}
+
+.fa-trash:hover, fa-trash:focus {
+	color: #D24207;
+	cursor: pointer;
+}

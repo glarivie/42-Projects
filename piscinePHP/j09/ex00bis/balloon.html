@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Veuillez souffler dans le balloon - jQuery</title>
+	</head>
+	<style media="screen">
+		#balloon {
+			width: 200px;
+			height: 200px;
+			border-radius: 100px;
+			margin-top: 50px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.red {
+			background-color: red;
+		}
+
+		.blue {
+			background-color: blue;
+		}
+
+		.green {
+			background-color: green;
+		}
+	</style>
+	<body>
+
+		<div class="red" id="balloon"></div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+		<script type="text/javascript">
+			var balloon = $('#balloon'),
+				classes = ['red', 'green', 'blue'],
+				classesInvert = ['blue', 'green', 'red'];
+
+			balloon.on('click', function() {
+
+				balloon.each(function(){
+					this.className = classes[
+						($.inArray(this.className, classes) + 1) % classes.length
+				 	];
+				});
+
+				balloon.css({
+					'width' : function() {
+						return (parseInt(balloon.css('width')) >= 420 ? '200' : '+=10');
+					},
+					'height' : function() {
+						return (parseInt(balloon.css('height')) >= 420 ? '200' :'+=10');
+					},
+					'borderRadius' : function() {
+						return (parseInt(balloon.css('width')) / 2);
+					}
+				});
+			});
+
+			balloon.on('mouseout', function() {
+
+				balloon.each(function(){
+					this.className = classesInvert[
+						($.inArray(this.className, classesInvert) + 1) % classes.length
+				 	];
+				});
+
+				balloon.css({
+					'width' : function() {
+						return (parseInt(balloon.css('width')) <= 200 ? '200' : '-=5');
+					},
+					'height' : function() {
+						return (parseInt(balloon.css('height')) <= 200 ? '200' :'-=5');
+					},
+					'borderRadius' : function() {
+						return (parseInt(balloon.css('width')) / 2);
+					}
+				});
+			});
+
+		</script>
+	</body>
+</html>
