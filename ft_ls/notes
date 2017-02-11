@@ -1,0 +1,89 @@
+
+Allowed functions :
+
+◦ write                 ok
+
+◦ opendir
+◦ readdir
+◦ closedir
+◦ stat
+◦ lstat					int	lstat(const char *restrict path, struct stat *restrict buf);
+◦ getpwuid				struct passwd *getpwuid(uid_t uid);
+◦ getgrgid
+◦ listxattr
+◦ time
+◦ ctime					char *ctime(const time_t *clock);
+◦ readlink
+
+◦ malloc				ok
+◦ free					ok
+
+◦ perror
+◦ strerror
+
+◦ exit					ok
+
+Options :
+	sans options : affiche le nom des fichiers et des dossiers sans les fichiers et dossiers cachés (.file) trié par ordre alphabetique (ASCII) depuis le repertoire courrant.
+
+	-l : 	  En  plus  du  nom, afficher le type du fichier, les
+              permissions d'accès, le nombre de liens  physiques,
+              le  nom  du propriétaire et du groupe, la taille en
+              octets, et l'horodatage (de la  dernière  modifica­tion,
+			  sauf  si une autre date est réclamée par les
+              options -c ou -u).  Pour les fichiers vieux de plus
+              de  6  mois, ou en avance sur la date de plus d'une
+              heure, l'horodatage contient l'année à la place  de
+              l'heure.   -q Afficher des points d'interrogation à
+              la place des caractères  non-imprimables  dans  les
+              noms de fichiers.
+
+	-R : Afficher  récursivement  le contenu des sous-réper­toires.
+
+	-a : Afficher tous les fichiers des répertoires, y  com­pris les fichiers
+		 commençant par un `.'.
+
+	-r : Inverser le tri du contenu des répertoires.
+
+	-t : Trier  le contenu des répertoires en fonction de la date et non pas en
+		 ordre alphabétique. Les fichiers les plus récents sont présentés en premier.
+
+struct dirent {
+    ino_t          d_ino;       /* numéro d'inœud */
+    off_t          d_off;       /* décalage jusqu'à la dirent suivante */
+    unsigned short d_reclen;    /* longueur de cet enregistrement */
+    unsigned char  d_type;      /* type du fichier */
+    char           d_name[256]; /* nom du fichier */ <-------
+};
+
+struct stat {
+    dev_t     st_dev;      /* ID du périphérique contenant le fichier */
+    ino_t     st_ino;      /* Numéro inœud */
+    mode_t    st_mode;     /* Protection */
+    nlink_t   st_nlink;    /* Nb liens matériels */
+    uid_t     st_uid;      /* UID propriétaire */
+    gid_t     st_gid;      /* GID propriétaire */
+    dev_t     st_rdev;     /* ID périphérique (si fichier spécial) */
+    off_t     st_size;     /* Taille totale en octets */
+    blksize_t st_blksize;  /* Taille de bloc pour E/S */
+    blkcnt_t  st_blocks;   /* Nombre de blocs alloués */
+    time_t    st_atime;    /* Heure dernier accès */
+    time_t    st_mtime;    /* Heure dernière modification */
+    time_t    st_ctime;    /* Heure dernier changement état */
+};
+
+struct passwd {
+    char   *pw_name;   /* Nom d'utilisateur             */
+    char   *pw_passwd; /* Mot de passe                  */
+    uid_t   pw_uid;    /* ID de l'utilisateur           */
+    gid_t   pw_gid;    /* ID du groupe de l'utilisateur */
+    char   *pw_gecos;  /* Nom réel de l'utilisateur     */
+    char   *pw_dir;    /* Répertoire de connexion       */
+    char   *pw_shell;  /* Programme Shell de connexion  */
+};
+struct group {
+	char    *gr_name;       /* group name */
+	char    *gr_passwd;     /* group password */
+	gid_t   gr_gid;         /* group id */
+	char    **gr_mem;       /* group members */
+};
