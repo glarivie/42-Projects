@@ -1,0 +1,30 @@
+{
+  "name": "red-tetris",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon --exec 'babel-node ./src/server.js'",
+    "debug": "NODE_ENV=development nodemon --exec 'npm run lint && npm run build && node --debug ./build/server.js'",
+    "start-prod": "NODE_ENV=production npm run prod",
+    "prod": "node ./build/index.js",
+    "clean": "rm -rf build && mkdir build",
+    "build-server": "babel -d ./build ./src -s",
+    "build": "npm run clean && npm run build-server"
+  },
+  "author": "glarivie rle-mino",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-preset-latest": "^6.16.0",
+    "dotenv": "^2.0.0",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "lodash": "^4.17.3",
+    "nodemon": "^1.11.0",
+    "socket.io": "^1.7.2"
+  }
+}

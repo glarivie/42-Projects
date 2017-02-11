@@ -1,0 +1,18 @@
+.game {
+  width: calc(10 * 2em);
+  height: calc(20 * 2em);
+  border: 1px solid rgba(255, 255, 255, .1);
+  background-color: rgba(255, 255, 255, .05);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  outline: none;
+}
+
+
+.game .shape {
+  position: absolute;
+  width: calc(1 * 2em);
+  height: calc(1 * 2em);
+  background-color: #FFD042;
+}
