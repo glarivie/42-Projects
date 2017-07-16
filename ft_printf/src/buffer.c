@@ -6,21 +6,26 @@
 /*   By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/16 12:18:13 by glarivie          #+#    #+#             */
-/*   Updated: 2017/07/16 14:01:03 by glarivie         ###   ########.fr       */
+/*   Updated: 2017/07/16 17:47:50 by glarivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-char  *append(char *buffer, const char c)
+char	*append_char(char *buffer, const char c)
 {
-  static size_t   reallocated = 1;
-  static size_t   index = 0;
+	static size_t	r = 1;
+	static size_t	index = 0;
 
-  if (ft_strlen(buffer) == reallocated * BUFFER_SIZE)
-    buffer = (char *)ft_realloc(buffer, reallocated++ * (sizeof(char) * BUFFER_SIZE));
+	if (ft_strlen(buffer) == r * BUFFER_SIZE)
+		buffer = (char *)ft_realloc(buffer, ++r * (sizeof(char) * BUFFER_SIZE));
+	buffer[index++] = c;
+	return (buffer);
+}
 
-  buffer[index++] = c;
-
-  return buffer;
+char	*append_str(char *buffer, const char *str)
+{
+	while (*str)
+		buffer = append_char(buffer, *str++);
+	return (buffer);
 }
