@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   to_upper.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/09/14 20:00:47 by glarivie          #+#    #+#             */
-/*   Updated: 2017/07/15 20:18:20 by glarivie         ###   ########.fr       */
+/*   Created: 2017/07/15 15:36:57 by glarivie          #+#    #+#             */
+/*   Updated: 2017/07/15 20:26:01 by glarivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-int		ft_toupper(int c)
+char  *to_upper(char *str)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	else
-		return (c);
+  size_t index;
+  char *tmp;
+
+  index = -1;
+  tmp = strdup(str);
+  while (str[++index])
+    tmp[index] = ft_toupper(str[index]);
+
+  return tmp;
 }

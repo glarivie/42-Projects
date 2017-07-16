@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   buffer.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/09/14 20:00:47 by glarivie          #+#    #+#             */
-/*   Updated: 2017/07/15 20:18:20 by glarivie         ###   ########.fr       */
+/*   Created: 2017/07/16 12:18:13 by glarivie          #+#    #+#             */
+/*   Updated: 2017/07/16 14:01:03 by glarivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-int		ft_toupper(int c)
+char  *append(char *buffer, const char c)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	else
-		return (c);
+  static size_t   reallocated = 1;
+  static size_t   index = 0;
+
+  if (ft_strlen(buffer) == reallocated * BUFFER_SIZE)
+    buffer = (char *)ft_realloc(buffer, reallocated++ * (sizeof(char) * BUFFER_SIZE));
+
+  buffer[index++] = c;
+
+  return buffer;
 }

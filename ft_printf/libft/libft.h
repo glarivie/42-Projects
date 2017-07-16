@@ -6,7 +6,7 @@
 /*   By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/09/13 11:38:19 by glarivie          #+#    #+#             */
-/*   Updated: 2016/01/06 12:10:36 by glarivie         ###   ########.fr       */
+/*   Updated: 2017/07/16 13:36:45 by glarivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ void				*ft_memchr(const void *s, int c, size_t n);
 void				*ft_memalloc(size_t size);
 void				ft_memdel(void **ap);
 void				ft_strdel(char **as);
+void				*ft_realloc(void *ptr, size_t size);
 
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));

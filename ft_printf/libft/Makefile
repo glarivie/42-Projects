@@ -6,7 +6,7 @@
 #    By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/09/16 14:27:46 by glarivie          #+#    #+#              #
-#    Updated: 2016/01/06 12:09:20 by glarivie         ###   ########.fr        #
+#    Updated: 2017/07/16 13:37:23 by glarivie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ SRCS 	= ft_atoi.c			ft_bzero.c		ft_memcpy.c		ft_memccpy.c	\
 	  ft_strsplit.c		ft_lstmap.c		ft_lstadd.c		ft_lstiter.c	\
 	  ft_lstdel.c		ft_lstdelone.c	ft_ishexa.c		ft_lstnew.c		\
 	  ft_isspace.c		ft_ishexa.c		ft_intlen.c		ft_swap.c		\
-	  ft_atobin.c		ft_puttab.c		ft_putnbr_endl.c				\
+	  ft_atobin.c		ft_puttab.c		ft_putnbr_endl.c		ft_realloc.c		\
 	  ft_sort_int_tab.c					get_next_line.c	ft_lstback.c	\
 
 DIRSRC	= $(addprefix ./ ,$(SRCS))

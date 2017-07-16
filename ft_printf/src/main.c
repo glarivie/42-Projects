@@ -1,21 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/09/14 20:00:47 by glarivie          #+#    #+#             */
-/*   Updated: 2017/07/15 20:18:20 by glarivie         ###   ########.fr       */
+/*   Created: 2017/07/15 19:45:00 by glarivie          #+#    #+#             */
+/*   Updated: 2017/07/16 13:58:40 by glarivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-int		ft_toupper(int c)
+int main()
 {
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	else
-		return (c);
+  int original;
+  int my_count;
+  char *test;
+
+  test = ft_strnew(sizeof(char) * 6);
+  test = "hello";
+
+  original = printf("helloytertertoertjertejrterjteijrtej\n");
+  my_count = ft_printf("helloytertertoertjertejrterjteijrtej\n");
+
+  printf("original: %d\n", original);
+  printf("my_count: %d\n", my_count);
+
+  return 0;
 }

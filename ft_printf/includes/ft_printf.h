@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/01/14 18:40:42 by glarivie          #+#    #+#             */
-/*   Updated: 2016/01/19 11:04:35 by glarivie         ###   ########.fr       */
+/*   Created: 2017/07/15 15:35:22 by glarivie          #+#    #+#             */
+/*   Updated: 2017/07/16 14:25:25 by glarivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,16 @@
 # define FT_PRINTF_H
 
 # include "libft.h"
+# include <stdlib.h>
+# include <stdio.h>
 # include <stdarg.h>
 # include <wchar.h>
+# include <assert.h>
 
-int		ft_printf(const char *format, ...);
+# define BUFFER_SIZE 1
+
+int   ft_printf(const char *fmt, ...);
+char  *append(char *buffer, const char c);
+char  *to_upper(char *str);
 
 #endif
