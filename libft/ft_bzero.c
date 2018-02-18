@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Inscrit le chiffre 0 sur le pointeur *s, n fois
+*/
+
 void	ft_bzero(void *s, size_t n)
 {
 	if (n > 0)

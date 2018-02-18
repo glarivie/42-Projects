@@ -12,11 +12,22 @@
 
 #include "libft.h"
 
+/*
+** ft_isop: Vérifie si le caractère "c" est un opérateur "+" ou "-"
+*/
 static t_bool	ft_isop(char c)
 {
 	return ((c == '-' || c == '+') ? TRUE : FALSE);
 }
 
+/*
+** ft_atoi: Converti une chaine de caractère en INT
+** 1 - Tant que le caractère est un espace, incrémente le compteur "index"
+** 2 - Si le caractère n'est pas un espace, "+", "-", un chiffre, retourne FALSE
+** 3 - Si le premier caractère rencontré est un "-", inverse le résultat
+** 4 - Tant que le caractère rencontré est un chiffre de la table ASCII,
+** le converti en INT et multiplie par 10 le retour pour augementer de dizaine
+*/
 int				ft_atoi(const char *str)
 {
 	int		ret;
@@ -28,6 +39,7 @@ int				ft_atoi(const char *str)
 	isneg = 1;
 	while (ft_isspace(str[index]) && str[index])
 		index++;
+
 	if (!ft_isdigit((int)str[index]) && !ft_isop(str[index]))
 		return (FALSE);
 	if (str[index] == '+')

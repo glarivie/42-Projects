@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Vérifie si un caractère est une lettre ou un chiffre
+*/
+
 int		ft_isalnum(int c)
 {
 	return ((ft_isalpha(c) || ft_isdigit(c)) ? TRUE : FALSE);

@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Vérifie qu'un caractère est une lettre majuscule ou minuscule
+*/
+
 int		ft_isalpha(int c)
 {
 	return (((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')) ? TRUE : FALSE);

@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Vérifie qu'un caractère est dans la table ASCII
+*/
+
 int		ft_isascii(int c)
 {
 	return ((c >= 0 && c <= 127) ? TRUE : FALSE);

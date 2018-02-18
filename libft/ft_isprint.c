@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Vérifie qu'un caractère est imprimable
+*/
+
 int		ft_isprint(int c)
 {
 	return ((c >= 32 && c <= 126) ? TRUE : FALSE);

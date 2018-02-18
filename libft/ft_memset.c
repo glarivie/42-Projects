@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Crée une copie de "b" et inscrit "len" caractère "c" de type INT
+*/
+
 void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char *copy;

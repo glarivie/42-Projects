@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Vérifie si un caractère est compris entre "0" et "9" ou en "a|A" et "f|F"
+*/
+
 t_bool		ft_ishexa(int c)
 {
 	if ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'f') ||

@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Vérifie qu'un caractère est espace, un retour à la ligne ou une tabulation
+*/
+
 t_bool	ft_isspace(char c)
 {
 	return ((c == ' ' || c == '\n' || c == '\t' || c == '\r'

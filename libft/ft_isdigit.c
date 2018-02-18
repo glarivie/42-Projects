@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** Vérifie si un caractère est compris entre "0" et "9"
+*/
+
 t_bool	ft_isdigit(int c)
 {
 	return ((c >= '0' && c <= '9') ? TRUE : FALSE);
